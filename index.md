@@ -3,7 +3,7 @@
 
 <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
   <h1 style="margin-bottom: 5px; font-size: 2.5em;">木藤研 - Kidou Lab</h1>
-  <p style="font-size: 1.25em; color: var(--primary); font-weight: 500; margin-top: 0;">
+  <p style="text-align: center; font-size: 1.25em; color: var(--primary); font-weight: 500; margin-top: 0;">
     植物生命科学 - Plant Physiology and Molecular Biology
   </p>
 </div>

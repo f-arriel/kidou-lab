@@ -3,6 +3,8 @@ description: "遺伝子やタンパク質の機能解析を通じて、あなた
 header: images/background.jpg
 footer: images/background.jpg
 proofer: false
+timezone: Asia/Tokyo
+future: true
 
 # site social media and other links
 links:

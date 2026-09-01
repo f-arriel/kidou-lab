@@ -13,14 +13,12 @@ nav:
 
 **Email: [kidou@nsc.nagoya-cu.ac.jp](mailto:kidou@nsc.nagoya-cu.ac.jp)**
 {:.center}
-*(※スパム対策のため、アドレス入力時は # を @ に置き換えてください / Please replace # with @ if typing manually)*
-{:.center}
 
 {% include section.html %}
 
 ## アクセス / Directions
 
-<img src="images/campus.jpg" alt="Nagoya City University Takiko Campus" style="display: block; margin: 0 auto 30px auto; width: 100%; max-width: 800px; border-radius: 8px;">
+<img src="{{ '/images/campus.jpg' | relative_url }}" alt="Nagoya City University Takiko Campus" style="display: block; margin: 0 auto 30px auto; width: 100%; max-width: 800px; border-radius: 8px;">
 
 木藤研究室は、名古屋市立大学 山の畑キャンパス（経済学部と同キャンパス）にあります。お越しの際は「北門」のご利用が便利です。
 <br><br>

@@ -1,5 +1,5 @@
 ---
-name: 渡邉 栞夕
+name: 渡邉 栞夕 / Shuu Watanabe
 image: images/SWatanabe.jpg
 role: 博士前期課程2年 / Master Student
 ---

@@ -13,9 +13,6 @@ nav:
 
 {% include list.html data="members" component="portrait" filter="role =~ /Professor/i" %}
 
-## 研究員 / Research Staff
-
-{% include list.html data="members" component="portrait" filter="role =~ /Research Staff/i" %}
 
 ## 博士後期課程 / PhD Students
 
@@ -29,9 +26,18 @@ nav:
 
 {% include list.html data="members" component="portrait" filter="role =~ /Undergraduate/i" %}
 
+## 研究員 / Research Staff
+
+{% include list.html data="members" component="portrait" filter="role =~ /Research Staff/i" %}
+
 
 {% include section.html %}
 
 ## 卒業生 / Alumni
-
-{% include list.html data="members" component="portrait" filter="role =~ /alum/i" %}
+永井里美
+<dr>
+鵜飼真美生
+<dr>
+久保岳人
+<dr>
+横山悠理

@@ -9,7 +9,7 @@ nav:
 
 {% include section.html %}
 
-## **天然変性タンパク質と低温ストレス応答 / Disordered Proteins to Survive Cold Stress**
+## **天然変性タンパク質と低温ストレス / Disordered proteins to survive cold**
 
 {% capture text %}
 <br>

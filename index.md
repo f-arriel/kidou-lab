@@ -3,10 +3,98 @@
 
 <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
   <h1 style="margin-bottom: 5px; font-size: 2.5em;">木藤研 - Kidou Lab</h1>
-  <p style="font-size: 1.25em; color: var(--primary); font-weight: 500; margin-top: 0;">
+  <p style="text-align: center; "font-size: 1.25em; color: var(--primary); font-weight: 500; margin-top: 0;">
     植物生命科学 - Plant Physiology and Molecular Biology
   </p>
 </div>
+
+{% include section.html %}
+
+<!-- MODERN, SCROLLABLE NEWS SECTION START -->
+<div style="
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  border-radius: 8px;
+  background-color: var(--background);
+  border: 1px solid var(--light-gray);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  overflow: hidden;
+">
+  <!-- News Header (Centered) -->
+  <div style="
+    padding: 15px 20px;
+    background-color: var(--background-alt);
+    border-bottom: 1px solid var(--light-gray);
+    text-align: center;
+  ">
+    <h3 style="margin: 0; font-size: 1.4em;">
+      {% include icon.html icon='fa-solid fa-satellite-dish' %}
+      研究室ニュース / Lab News
+    </h3>
+  </div>
+
+  <!-- Scrollable Feed Container (Fixed Height) -->
+  <div style="
+    height: 300px; /* Adjust height here as needed */
+    overflow-y: auto; /* Enables inner vertical scroll */
+    padding: 10px 20px;
+    scrollbar-width: thin; /* Clean modern scrollbar for Firefox */
+    scrollbar-color: var(--gray) var(--background-alt); /* Colors for scrollbar */
+  ">
+    <!-- Jekyll Post Loop: Fetches most recent 10 posts -->
+    {% assign recent_posts = site.posts | limit: 10 %}
+    {% if recent_posts.size > 0 %}
+      <ul style="list-style-type: none; padding: 0; margin: 0;">
+        {% for post in recent_posts %}
+          <li style="
+            border-bottom: 1px solid var(--light-gray);
+            padding: 15px 5px;
+            display: flex;
+            align-items: flex-start;
+          ">
+            <!-- Modern Date Badge (Left Side) -->
+            <div style="
+              text-align: center;
+              margin-right: 20px;
+              flex-shrink: 0;
+              width: 90px;
+              font-family: var(--code);
+            ">
+              <span style="font-size: 0.9em; font-weight: 600;">{{ post.date | date: "%Y年" }}</span><br>
+              <span style="color: var(--primary); font-size: 1.1em; font-weight: 600; line-height: 1;">{{ post.date | date: "%m/%d" }}</span>
+            </div>
+
+            <!-- Post Title (Clickable) -->
+            <div style="flex-grow: 1; padding-top: 2px;">
+              <a href="{{ post.url | relative_url }}" style="font-weight: 500; font-size: 1.1em; text-decoration: none; color: inherit;">
+                {{ post.title }}
+              </a>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <!-- Fallback message if no posts exist -->
+      <div style="text-align: center; padding: 40px; color: var(--gray);">
+        現在、新しいニュースはありません。<br>
+        *There are currently no new announcements.*
+      </div>
+    {% endif %}
+  </div>
+
+  <!-- Bottom Link to full Blog page -->
+  <div style="
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid var(--light-gray);
+    background-color: var(--background-alt);
+  ">
+    <a href="{{ '/blog/' | relative_url }}" style="font-size: 0.9em;">
+      すべての投稿を見る / See all posts {% include icon.html icon='fa-solid fa-angles-right' %}
+    </a>
+  </div>
+</div>
+<!-- MODERN, SCROLLABLE NEWS SECTION END -->
 
 {% include section.html %}
 

@@ -1,7 +1,7 @@
 ---
 name: 木藤 新一郎 / Shin-ichiro Kidou
 image: images/SKidou.jpg
-role: 教授 / Professor
+role: principal-investigator
 links:
   email: kidou@nsc.nagoya-cu.ac.jp
   orcid: 0000-0001-8829-7950

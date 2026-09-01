@@ -20,7 +20,7 @@ nav:
 
 ## アクセス / Directions
 
-{% capture text %}
+<img src="images/campus.jpg" alt="Nagoya City University Takiko Campus" style="display: block; margin: 0 auto 30px auto; width: 100%; max-width: 800px; border-radius: 8px;">
 
 木藤研究室は、名古屋市立大学 山の畑キャンパス（経済学部と同キャンパス）にあります。お越しの際は「北門」のご利用が便利です。
 <br><br>
@@ -52,12 +52,3 @@ Building 5, 2nd Floor (Office: Room 255 / Lab: Room 273)<br>
 <br>
 <!-- Google Maps Embed -->
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.880468307436!2d136.93125211244304!3d35.13465357262963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037a726a523157%3A0x904e399bd7aeebde!2sNagoya%20City%20University%20Takiko%20Campus!5e0!3m2!1sen!2sjp!4v1714102983141!5m2!1sen!2sjp" width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/campus.jpg"
-  headline=""
-  text=text
-%}

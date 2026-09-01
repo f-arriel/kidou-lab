@@ -22,7 +22,7 @@ Many of the grains and vegetables that humanity relies on for food require expos
 
 {%
   include feature.html
-  image="images/research2.jpg"
+  image="images/research1.jpg"
   headline="ムギの低温環境適応機構〜低温春化を中心に〜 / Grass plant cold stress responses protein"
   text=text
 %}
@@ -39,7 +39,7 @@ Wheat and barley (Triticeae crops) are among the most widely produced and essent
 
 {%
   include feature.html
-  image="images/research1.jpg"
+  image="images/research2.jpg"
   headline="オオムギ特異的タンパク質P23kの機能 / P23k family protein analysis"
   text=text
 %}

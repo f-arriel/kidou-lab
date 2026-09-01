@@ -1,7 +1,7 @@
 ---
 name: Arriel Fadhilah
 image: images/Arriel.jpg
-role: 博士後期課程1年 / PhD Student
+role: phd
 links:
   researchgate: Arriel-Fadhilah
   google-scholar: aNMrAQYAAAAJ

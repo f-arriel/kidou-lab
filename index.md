@@ -7,8 +7,6 @@
 
 {% include section.html %}
 
-## 私たちの研究について / About Our Research
-
 {% capture text %}
 
 オオムギは、ビールやウイスキーの主原料として利用されているだけでなく、日本では麦茶や麦ご飯としても利用されています。また、食物繊維であるβ-グルカンを豊富に含むことから、健康食品としても着目されています。また、オオムギは低温をはじめとする環境ストレスに耐性を持つことから、コムギの栽培に適さない寒冷地である北欧でも栽培できるという特徴を持っています。私たちの研究室では、このオオムギが持つ低温耐性の仕組みとβ-グルカンを合成する仕組みを分子レベルで解き明かす研究に着手しています。また、モデル植物であるシロイヌナズナを用いて、花芽形成の研究にも挑んでいます。教員が一人しかいない小さな研究室ですが、地道に植物の生理機構を分子レベルで解き明かす研究に取り組んでいます。植物に興味がある方は、是非私たちの研究室のメンバーに加わって下さい。
@@ -28,7 +26,7 @@ Barley is not only used as a main ingredient in beer and whiskey, but is also en
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/Home.jpg"
   link="research"
   title="私たちの研究について / About Our Research"
   text=text

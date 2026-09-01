@@ -1,0 +1,44 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images" # Root image folder
+public_folder: "/images"
+
+collections:
+  # 1. THE NEWS SECTION (Folder Collection)
+  - name: "news"
+    label: "Lab News"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  # 2. THE MEMBERS SECTION (Folder Collection)
+  - name: "members"
+    label: "Lab Members"
+    folder: "_members" # Or whichever folder holds your member markdown files
+    create: true
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Role", name: "role", widget: "select", options: ["principal-investigator", "phd", "master", "undergrad", "postdoc"]}
+      - {label: "Portrait Image", name: "image", widget: "image"}
+      - {label: "Biography", name: "body", widget: "markdown"}
+
+  # 3. THE PUBLICATIONS SECTION (File Collection)
+  - name: "publications"
+    label: "Publications & DOIs"
+    files:
+      - label: "DOI List"
+        name: "sources"
+        file: "_data/sources.yaml" # Targets your exact data file
+        fields:
+          - label: "Citations"
+            name: "citations" # The top-level list in your yaml
+            widget: "list"
+            fields:
+              - {label: "DOI (Must start with doi:)", name: "id", widget: "string"}
+              - {label: "Representative Figure", name: "image", widget: "image", required: false}

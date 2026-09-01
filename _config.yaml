@@ -1,19 +1,20 @@
 # site properties and page defaults
 title: 木藤研究室（生体制御情報系・植物生命科学研究分野）
+title_en: Kidou Laboratory - Plant Physiology and Molecular Biology
 subtitle: 名古屋市立大学大学院 
+subtitle_en: Graduate School of Science, Nagoya City University
 description: 遺伝子やタンパク質の機能解析を通じて、あなたも美しい生命現象の謎解きに参加しませんか？
+description_en: Join us in unraveling the beautiful mysteries of life phenomena through the functional analysis of genes and proteins.
 header: images/background.jpg
 footer: images/background.jpg
 proofer: false
 
 # site social media and other links
 links:
-  email: contact@f-arriel.com
-  orcid: 0000-0001-8713-9213
-  google-scholar: ETJoidYAAAAJ
-  github: f-arriel
-  twitter: f-arriel
-  youtube: f-arriel
+  email: kidou@nsc.nagoya-cu.ac.jp
+  orcid: 0000-0001-8829-7950
+  researchmap: https://researchmap.jp/read0149166
+  university: https://www.nagoya-cu.ac.jp/nsc/
 
 ### jekyll settings
 

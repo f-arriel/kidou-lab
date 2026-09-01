@@ -1,10 +1,11 @@
 ---
-title: Example post 1
-author: sarah-johnson
+title: Presented our evolutionary perspective on CISP at SESJ26
+author: arrielf
 tags:
-  - biology
-  - medicine
-  - big data
+  - Evolution
+  - Conference
+  - CISP
+  - Poaceae
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We have presented on the 28th Annual Meeting of the Society of Evolutionary Studies, Japan that has been conducted at Nagoya University. We participated at the poster session presenting our newest finding on how Poaceae modify CISP protein specifically as a responses for cold stress.

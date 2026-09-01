@@ -2,185 +2,185 @@
 
 # team member roles
 principal-investigator:
-  icon: fa-solid fa-microscope
-  description: 教授 / Principal Investigator
+  icon: "fa-solid fa-microscope"
+  description: "教授 / Principal Investigator"
 
 postdoc:
-  icon: fa-solid fa-glasses
-  description: 研究員 / Postdoctoral Researcher
+  icon: "fa-solid fa-glasses"
+  description: "研究員 / Postdoctoral Researcher"
 
 phd:
-  icon: fa-solid fa-graduation-cap
-  description: 博士後期課程 / PhD Student
+  icon: "fa-solid fa-graduation-cap"
+  description: "博士後期課程 / PhD Student"
 
 master:
-  icon: fa-solid fa-user-graduate
-  description: 博士前期課程 / Master Student
+  icon: "fa-solid fa-user-graduate"
+  description: "博士前期課程 / Master Student"
 
 undergrad:
-  icon: fa-solid fa-book-open
-  description: 学部生 / Undergraduate Student
+  icon: "fa-solid fa-book-open"
+  description: "学部生 / Undergraduate Student"
 
 # general
 link:
-  icon: fa-solid fa-globe
-  text: リンク / Link
-  tooltip: リンク / Link
+  icon: "fa-solid fa-globe"
+  text: "リンク / Link"
+  tooltip: "リンク / Link"
 
 website:
-  icon: fa-solid fa-globe
-  text: ウェブサイト / Website
-  tooltip: ウェブサイト / Website
-  link: $VALUE
+  icon: "fa-solid fa-globe"
+  text: "ウェブサイト / Website"
+  tooltip: "ウェブサイト / Website"
+  link: "$VALUE"
 
 external:
-  icon: fa-solid fa-up-right-from-square
-  text: 外部リンク / External Link
-  tooltip: 外部リンク / External link
+  icon: "fa-solid fa-up-right-from-square"
+  text: "外部リンク / External Link"
+  tooltip: "外部リンク / External link"
 
 home-page:
-  icon: fa-solid fa-house-user
-  text: ホーム / Home Page
-  tooltip: ホーム / Home page
+  icon: "fa-solid fa-house-user"
+  text: "ホーム / Home Page"
+  tooltip: "ホーム / Home page"
 
 email:
-  icon: fa-solid fa-envelope
-  text: メール / Email
-  tooltip: メール / Email
-  link: mailto:$VALUE
+  icon: "fa-solid fa-envelope"
+  text: "メール / Email"
+  tooltip: "メール / Email"
+  link: "mailto:$VALUE"
 
 phone:
-  icon: fa-solid fa-phone
-  text: 電話 / Phone Number
-  tooltip: 電話 / Phone number
-  link: tel:$VALUE
+  icon: "fa-solid fa-phone"
+  text: "電話 / Phone Number"
+  tooltip: "電話 / Phone number"
+  link: "tel:$VALUE"
 
 address:
-  icon: fa-solid fa-map-location-dot
-  text: 住所 / Address
-  tooltip: 住所 / Address
+  icon: "fa-solid fa-map-location-dot"
+  text: "住所 / Address"
+  tooltip: "住所 / Address"
 
 search:
-  icon: fa-solid fa-magnifying-glass
-  text: 検索 / Search
-  tooltip: 検索 / Search
+  icon: "fa-solid fa-magnifying-glass"
+  text: "検索 / Search"
+  tooltip: "検索 / Search"
 
 # social media & academic profiles
 orcid:
-  icon: fa-brands fa-orcid
-  text: ORCID
-  tooltip: ORCID
-  link: https://orcid.org/$VALUE
+  icon: "fa-brands fa-orcid"
+  text: "ORCID"
+  tooltip: "ORCID"
+  link: "https://orcid.org/$VALUE"
 
 google-scholar:
-  icon: fa-brands fa-google
-  text: Google Scholar
-  tooltip: Google Scholar
-  link: https://scholar.google.com/citations?user=$VALUE
+  icon: "fa-brands fa-google"
+  text: "Google Scholar"
+  tooltip: "Google Scholar"
+  link: "https://scholar.google.com/citations?user=$VALUE"
 
 researchgate:
-  icon: fa-brands fa-researchgate
-  text: ResearchGate
-  tooltip: ResearchGate
-  link: https://www.researchgate.net/profile/$VALUE
+  icon: "fa-brands fa-researchgate"
+  text: "ResearchGate"
+  tooltip: "ResearchGate"
+  link: "https://www.researchgate.net/profile/$VALUE"
 
 researchmap:
-  icon: fa-solid fa-map-location-dot
-  text: Researchmap
-  tooltip: Researchmap
-  link: https://researchmap.jp/$VALUE
+  icon: "fa-solid fa-map-location-dot"
+  text: "Researchmap"
+  tooltip: "Researchmap"
+  link: "https://researchmap.jp/$VALUE"
 
 github:
-  icon: fa-brands fa-github
-  text: GitHub
-  tooltip: GitHub
-  link: https://github.com/$VALUE
+  icon: "fa-brands fa-github"
+  text: "GitHub"
+  tooltip: "GitHub"
+  link: "https://github.com/$VALUE"
 
 twitter:
-  icon: fa-brands fa-twitter
-  text: Twitter
-  tooltip: Twitter
-  link: https://twitter.com/$VALUE
+  icon: "fa-brands fa-twitter"
+  text: "Twitter"
+  tooltip: "Twitter"
+  link: "https://twitter.com/$VALUE"
 
 youtube:
-  icon: fa-brands fa-youtube
-  text: YouTube
-  tooltip: YouTube
-  link: https://youtube.com/$VALUE
+  icon: "fa-brands fa-youtube"
+  text: "YouTube"
+  tooltip: "YouTube"
+  link: "https://youtube.com/$VALUE"
 
 # alerts
 tip:
-  icon: fa-solid fa-lightbulb
+  icon: "fa-solid fa-lightbulb"
   color: "#d946ef"
 
 help:
-  icon: fa-solid fa-circle-question
+  icon: "fa-solid fa-circle-question"
   color: "#6366f1"
 
 info:
-  icon: fa-solid fa-circle-info
+  icon: "fa-solid fa-circle-info"
   color: "#0ea5e9"
 
 success:
-  icon: fa-solid fa-circle-check
+  icon: "fa-solid fa-circle-check"
   color: "#22c55e"
 
 warning:
-  icon: fa-solid fa-circle-exclamation
+  icon: "fa-solid fa-circle-exclamation"
   color: "#F59E0B"
 
 error:
-  icon: fa-solid fa-ban
+  icon: "fa-solid fa-ban"
   color: "#ef4444"
 
 # publications
 paper:
-  icon: fa-solid fa-scroll
-  text: 論文 / Paper
-  tooltip: 論文 / Paper
+  icon: "fa-solid fa-scroll"
+  text: "論文 / Paper"
+  tooltip: "論文 / Paper"
 
 book:
-  icon: fa-solid fa-book
-  text: 著書 / Book
-  tooltip: 著書 / Book
+  icon: "fa-solid fa-book"
+  text: "著書 / Book"
+  tooltip: "著書 / Book"
 
 article:
-  icon: fa-solid fa-newspaper
-  text: 記事 / Article
-  tooltip: 記事 / Article
+  icon: "fa-solid fa-newspaper"
+  text: "記事 / Article"
+  tooltip: "記事 / Article"
 
 journal:
-  icon: fa-regular fa-newspaper
-  text: 雑誌 / Journal
-  tooltip: 雑誌 / Journal
+  icon: "fa-regular fa-newspaper"
+  text: "雑誌 / Journal"
+  tooltip: "雑誌 / Journal"
 
 preprint:
-  icon: fa-regular fa-eye
-  text: プレプリント / Preprint
-  tooltip: プレプリント / Preprint
+  icon: "fa-regular fa-eye"
+  text: "プレプリント / Preprint"
+  tooltip: "プレプリント / Preprint"
 
 unpublished:
-  icon: fa-regular fa-eye
-  text: 未発表 / Unpublished
-  tooltip: 未発表 / Unpublished
+  icon: "fa-regular fa-eye"
+  text: "未発表 / Unpublished"
+  tooltip: "未発表 / Unpublished"
 
 manubot:
-  icon: manubot.svg
-  text: Manubot
-  tooltip: Manubot
+  icon: "manubot.svg"
+  text: "Manubot"
+  tooltip: "Manubot"
 
 # software
 docs:
-  icon: fa-solid fa-book
-  text: ドキュメント / Documentation
-  tooltip: ドキュメント / Documentation
+  icon: "fa-solid fa-book"
+  text: "ドキュメント / Documentation"
+  tooltip: "ドキュメント / Documentation"
 
 source:
-  icon: fa-solid fa-code
-  text: ソース / Source
-  tooltip: ソースコード / Source code
+  icon: "fa-solid fa-code"
+  text: "ソース / Source"
+  tooltip: "ソースコード / Source code"
 
 data:
-  icon: fa-solid fa-database
-  text: データ / Data
-  tooltip: データ / Data
+  icon: "fa-solid fa-database"
+  text: "データ / Data"
+  tooltip: "データ / Data"

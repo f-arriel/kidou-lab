@@ -12,7 +12,7 @@
   link: https://doi.org/hchb7n
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.1002/pld3.70179
+- id: 10.1002/pld3.70179
   title: "CISP, an Intrinsically Disordered Cold\u2010Inducible Barley Protein, Functions\
     \ as a Small RNA Chaperone"
   authors:
@@ -24,7 +24,7 @@
   link: https://doi.org/hchb7b
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.1088/1755-1315/1593/1/012047
+- id: 10.1088/1755-1315/1593/1/012047
   title: 'Revealing microplastic pollution hotspots in Indonesia freshwaters: A synthesis
     of methodological biases, anthropogenic drivers, and predictive hotspot mapping'
   authors:
@@ -38,7 +38,7 @@
   link: https://doi.org/hchb7c
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.1088/1755-1315/1593/1/012048
+- id: 10.1088/1755-1315/1593/1/012048
   title: 'Deep-MAP: A user-friendly platform for deep learning-based microplastics
     classification'
   authors:
@@ -51,7 +51,7 @@
   link: https://doi.org/hchb7d
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.1007/s00344-026-12071-9
+- id: 10.1007/s00344-026-12071-9
   title: A Small Intrinsically Disordered Protein BdCISP2 in Brachypodium Distachyon
     Enhances Cold Tolerance
   authors:
@@ -64,7 +64,7 @@
   link: https://doi.org/hchb7f
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.1007/s11248-025-00453-w
+- id: 10.1007/s11248-025-00453-w
   title: 'Highly efficient direct seed transformation protocol for japonica rice (Oryza
     sativa L.) by Agrobacterium tumefaciens: overcoming the complexity of callus regeneration
     and avoiding the occurrence of somaclonal-mutations'
@@ -77,43 +77,7 @@
   link: https://doi.org/hchb7g
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.1271/kagakutoseibutsu.62.365
-  title: "\u4F4E\u6E29\u306B\u66DD\u3055\u308C\u305F\u30AA\u30AA\u30E0\u30AE\u306E\
-    \u6839\u3067\u767A\u73FE\u3059\u308B\u8B0E\u591A\u304D\u907A\u4F1D\u5B50&lt;i&gt;CISP&lt;/i&gt;"
-  authors:
-  - Shin-ichiro KIDOU
-  publisher: KAGAKU TO SEIBUTSU
-  date: '2024-08-01'
-  link: https://doi.org/hchb7h
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.1016/j.envexpbot.2019.05.009
-  title: Barley cold-induced CISP proteins contribute to the accumulation of heavy
-    metals in roots
-  authors:
-  - Mengchao Ying
-  - Hiroshi Yasuda
-  - Satoru Kobayashi
-  - Nobuhiko Sakurai
-  - Shin-ichiro Kidou
-  publisher: Environmental and Experimental Botany
-  date: '2019-09-01'
-  link: https://doi.org/hchb7j
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.1007/s10725-019-00487-1
-  title: PHD type zinc finger protein PFP represses flowering by modulating FLC expression
-    in Arabidopsis thaliana
-  authors:
-  - Yuri Yokoyama
-  - Satoru Kobayashi
-  - Shin-ichiro Kidou
-  publisher: Plant Growth Regulation
-  date: '2019-03-18'
-  link: https://doi.org/g43bsq
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.1016/j.plantsci.2017.04.011
+- id: 10.1016/j.plantsci.2017.04.011
   title: Discovery of novel cold-induced  CISP  genes encoding small RNA-binding proteins
     related to cold adaptation in barley
   authors:
@@ -124,7 +88,7 @@
   link: https://doi.org/gbjx7p
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.11416/jibs.86.3_105
+- id: 10.11416/jibs.86.3_105
   title: The physiological accumulation of mutant fibroin light chains induces an
     unfolded protein response in the posterior silk gland of the Sericin cocoon <i>Nd-s<sup>D</sup></i>
     strain of silkworm <i>Bombyx mori</i>
@@ -140,5 +104,375 @@
   publisher: Journal of Insect Biotechnology and Sericology
   date: '2017-01-01'
   link: https://doi.org/hchb7k
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1093/treephys/tpr028
+  title: Apple FLOWERING LOCUS T proteins interact with transcription factors implicated
+    in cell growth and organ development
+  authors:
+  - N. Mimida
+  - S.-I. Kidou
+  - H. Iwanami
+  - S. Moriya
+  - K. Abe
+  - C. Voogd
+  - E. Varkonyi-Gasic
+  - N. Kotoda
+  publisher: Tree Physiology
+  date: '2011-05-01'
+  link: https://doi.org/fgd7z2
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1093/pcp/pcq021
+  title: "Molecular Characterization of FLOWERING LOCUS T-Like Genes of Apple (Malus\u2009\
+    \xD7\u2009domestica Borkh.)"
+  authors:
+  - Nobuhiro Kotoda
+  - Hidehiro Hayashi
+  - Motoko Suzuki
+  - Megumi Igarashi
+  - Yoshimichi Hatsuyama
+  - Shin-ichiro Kidou
+  - Tomohiro Igasaki
+  - Mitsuru Nishiguchi
+  - Kanako Yano
+  - Tokurou Shimizu
+  - Sae Takahashi
+  - Hiroshi Iwanami
+  - Shigeki Moriya
+  - Kazuyuki Abe
+  publisher: Plant and Cell Physiology
+  date: '2010-04-01'
+  link: https://doi.org/cs2grw
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1270/jsbbs.59.664
+  title: Gene silencing of barley P23k involved in secondary wall formation causes
+    abnormal tiller formation and intercalary elongation
+  authors:
+  - Ai Oikawa
+  - Kazuya Nagai
+  - Kiyoaki Kato
+  - Shin-ichiro Kidou
+  publisher: Breeding Science
+  date: '2009-01-01'
+  link: https://doi.org/bv3wg7
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1007/s10709-009-9394-7
+  title: Genomic diversity of germinating scutellum specific gene P23k in barley and
+    wheat
+  authors:
+  - Hiro Kouzaki
+  - Shin-ichiro Kidou
+  - Hideho Miura
+  - Kiyoaki Kato
+  publisher: Genetica
+  date: '2009-07-30'
+  link: https://doi.org/c4ww4d
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1104/pp.109.137448
+  title: FRIGIDA Delays Flowering in Arabidopsis via a Cotranscriptional Mechanism
+    Involving Direct Interaction with the Nuclear Cap-Binding Complex
+  authors:
+  - Nuno Geraldo
+  - "Isabel Ba\u0308urle"
+  - Shin-ichiro Kidou
+  - Xiangyang Hu
+  - Caroline Dean
+  publisher: Plant Physiology
+  date: '2009-05-08'
+  link: https://doi.org/cndsv3
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1111/j.1469-8137.2008.02724.x
+  title: "Rice shoot branching requires an ATP\u2010binding cassette subfamily G protein"
+  authors:
+  - Naoko Yasuno
+  - Itsuro Takamure
+  - "Shin\u2010ichiro Kidou"
+  - Yoshihiko Tokuji
+  - "An\u2010na Ureshi"
+  - Atsushi Funabiki
+  - Kazunori Ashikaga
+  - Utako Yamanouchi
+  - Masahiro Yano
+  - Kiyoaki Kato
+  publisher: New Phytologist
+  date: '2008-12-24'
+  link: https://doi.org/d77t66
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1139/G07-092
+  title: Molecular cloning and mapping of casein kinase 2 alpha and beta subunit genes
+    in barley
+  authors:
+  - K. Kato
+  - S. Kidou
+  - H. Miura
+  publisher: Genome
+  date: '2008-03-01'
+  link: https://doi.org/d6cvgd
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1271/kagakutoseibutsu.46.597
+  title: ''
+  authors:
+  - Shin-ichiro KIDOU
+  publisher: KAGAKU TO SEIBUTSU
+  date: '2008-01-01'
+  link: https://doi.org/dfc2g7
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1007/s00438-007-0250-0
+  title: "Constitutive expression of two apple (Malus\_\xD7\_domestica Borkh.) homolog\
+    \ genes of LIKE HETEROCHROMATIN PROTEIN1 affects flowering time and whole-plant\
+    \ growth in transgenic Arabidopsis"
+  authors:
+  - Naozumi Mimida
+  - Shin-ichiro Kidou
+  - Nobuhiro Kotoda
+  publisher: Molecular Genetics and Genomics
+  date: '2007-06-19'
+  link: https://doi.org/dshdxq
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.5511/plantbiotechnology.24.217
+  title: Jasmonate-induced 23kD protein, JIP-23, is involved in seed development of
+    barley
+  authors:
+  - Ai Oikawa
+  - Tetsuro Yamashita
+  - Hideharu Taira
+  - Shin-ichiro Ejiri
+  - Shin-ichiro Kidou
+  publisher: Plant Biotechnology
+  date: '2007-01-01'
+  link: https://doi.org/d8rjn3
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1093/jxb/erm109
+  title: Virus-induced gene silencing of P23k in barley leaf reveals morphological
+    changes involved in secondary wall formation
+  authors:
+  - A. Oikawa
+  - A. Rahman
+  - T. Yamashita
+  - H. Taira
+  - S.-i. Kidou
+  publisher: Journal of Experimental Botany
+  date: '2007-06-07'
+  link: https://doi.org/bfx38q
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.5511/plantbiotechnology.23.357
+  title: Identification of a 23kDa protein (P23k) related to the sugar supply in germinating
+    barley seeds
+  authors:
+  - Shin-ichiro Kidou
+  - Ai Oikawa
+  - Naoko Sasaki
+  - Hiroshi Yasuda
+  - Tetsuro Yamashita
+  - Hiroyuki Koiwa
+  - Kiyoaki Kato
+  - Shin-ichiro Ejiri
+  publisher: Plant Biotechnology
+  date: '2006-01-01'
+  link: https://doi.org/fsc32w
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1007/s00425-005-1522-8
+  title: Localization of actin filaments on mitotic apparatus in tobacco BY-2 cells
+  authors:
+  - Hiroshi Yasuda
+  - Katsuhiro Kanda
+  - Hiroyuki Koiwa
+  - Kayoko Suenaga
+  - Shin-ichiro Kidou
+  - Shin-ichiro Ejiri
+  publisher: Planta
+  date: '2005-04-27'
+  link: https://doi.org/bc69k4
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1271/bbb.67.1522
+  title: "Interaction between Elongation Factors 1\u03B2 and 1\u03B3 from<i>Bombyx\
+    \ mori</i>Silk Gland"
+  authors:
+  - Katsuyoshi KAMIIE
+  - Tetsuro YAMASHITA
+  - Hideharu TAIRA
+  - Shin-ichiro KIDOU
+  - Shin-ichiro EJIRI
+  publisher: Bioscience, Biotechnology, and Biochemistry
+  date: '2003-01-01'
+  link: https://doi.org/dz36sb
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1007/s00122-001-0805-0
+  title: "Molecular cloning of the wheat CK2\u03B1 gene and detection of its linkage\
+    \ with Vrn-A1 on chromosome 5A"
+  authors:
+  - K. Kato
+  - S. Kidou
+  - H. Miura
+  - S. Sawada
+  publisher: Theoretical and Applied Genetics
+  date: '2002-05-01'
+  link: https://doi.org/bn9twn
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1271/bbb.66.558
+  title: "Cloning and Expression of<i>Bombyx mori</i>Silk Gland Elongation Factor\
+    \ 1\u03B3 in<i>Escherichia coli</i>"
+  authors:
+  - Katsuyoshi KAMIIE
+  - Yoshitaka NOMURA
+  - Satoru KOBAYASHI
+  - Hideharu TAIRA
+  - Kohmei KOBAYASHI
+  - Tetsuro YAMASHITA
+  - Shin-ichiro KIDOU
+  - Shin-ichiro EJIRI
+  publisher: Bioscience, Biotechnology, and Biochemistry
+  date: '2002-01-01'
+  link: https://doi.org/ffsxdh
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1006/bbrc.2001.5799
+  title: "Detection and Characterization of Glutathione S-Transferase Activity in\
+    \ Rice EF-1\u03B2\u03B2\u2032\u03B3 and EF-1\u03B3 Expressed in Escherichia coli"
+  authors:
+  - S. Kobayashi
+  - S. Kidou
+  - S. Ejiri
+  publisher: Biochemical and Biophysical Research Communications
+  date: '2001-11-01'
+  link: https://doi.org/ccx92h
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1007/s00251-001-0376-x
+  title: Genomic organization, chromosomal localization, and promoter analysis of
+    the mouse Mail gene
+  authors:
+  - Takahiko Shiina
+  - Masami Morimatsu
+  - Hiroshi Kitamura
+  - Toshihiro Ito
+  - Shin-ichiro Kidou
+  - Kazumi Matsubara
+  - Yoichi Matsuda
+  - Masayuki Saito
+  - Bunei Syuto
+  publisher: Immunogenetics
+  date: '2001-10-01'
+  link: https://doi.org/fc7spn
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1271/bbb.63.666
+  title: "Expression of Elongation Factor 1\u03B2\u2032 in<i>Escherichia coli</i>and\
+    \ Its Interaction with Elongation Factor 1\u03B1 from Silk Gland"
+  authors:
+  - Katsuyoshi KAMIIE
+  - Hideharu TAIRA
+  - Kohmei KOBAYASHI
+  - Tetsuro YAMASHITA
+  - Shin-ichiro KIDOU
+  - Shin-ichiro EJIRI
+  publisher: Bioscience, Biotechnology, and Biochemistry
+  date: '1999-01-01'
+  link: https://doi.org/ft8tcv
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1016/S0167-4781(98)00153-5
+  title: "A novel variant of translation elongation factor-1\u03B2: isolation and\
+    \ characterization of the rice gene encoding EF-1\u03B22"
+  authors:
+  - Yoshiaki Terui
+  - Ken-ichi Tsutsumi
+  - Shin-ichiro Kidou
+  - Takeshi Sawazaki
+  - Yasuyuki Kuroiwa
+  - Mitsuo Yamaki
+  - Shin-ichiro Ejiri
+  publisher: Biochimica et Biophysica Acta (BBA) - Gene Structure and Expression
+  date: '1998-11-01'
+  link: https://doi.org/c86ksg
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1016/S0014-5793(98)01014-X
+  title: "Isolation and characterization of a rice cDNA encoding the \u03B3\u2010\
+    subunit of translation elongation factor 1B (eEF1B\u03B3)<sup>1</sup>"
+  authors:
+  - Shin-ichiro Kidou
+  - Shigenori Tsukamoto
+  - Satoru Kobayashi
+  - Shin-ichiro Ejiri
+  publisher: FEBS Letters
+  date: '1998-09-04'
+  link: https://doi.org/c4zbwb
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1023/A:1005960721762
+  title: Isolation, characterization and mRNA expression of four cDNAs encoding translation
+    elongation factor 1A from rice (Oryza sativa L.)
+  authors:
+  - Shin-ichiro Kidou
+  - Shin-ichiro Ejiri
+  publisher: Plant Molecular Biology
+  date: '1998-01-01'
+  link: https://doi.org/dtsxhs
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.5511/plantbiotechnology1984.12.1
+  title: Expressed Sequence Tags of cDNA Libraries in Higher Plants.
+  authors:
+  - Shin-ichiro KIDOU
+  - Masaaki UMEDA
+  - Hirofumi UCHIMIYA
+  publisher: Plant tissue culture letters
+  date: '1995-01-01'
+  link: https://doi.org/cf6hb8
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.3109/10425179409039714
+  title: Nucleotide sequence of rice (<i>Oryza sativa</i>L.) cDNA homologous to<i>cdc2</i>gene
+  authors:
+  - Shin-Ichiro Kidou
+  - Masaaki Umeda
+  - Hirofumi Uchimiya
+  publisher: DNA Sequence
+  date: '1994-01-01'
+  link: https://doi.org/fvp688
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1016/0014-5793(93)80650-J
+  title: "Molecular structure of ras\u2010related small GTP\u2010binding protein genes\
+    \ of rice plants and GTPase activities of gene products in <i>Escherichia coli</i>"
+  authors:
+  - Shin-ichiro Kidou
+  - Toyoaki Anai
+  - Masaaki Umeda
+  - Satoshi Aotsuka
+  - Tomohiko Tsuge
+  - Atsushi Kato
+  - Hirofumi Uchimiya
+  publisher: FEBS Letters
+  date: '1993-10-18'
+  link: https://doi.org/c42dt7
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1093/nar/21.8.2013
+  title: Plant cDNA homologue to rat insulinoma gene encoding ribosomal protein S15
+  authors:
+  - Shin-ichiro Kidou
+  - Masaaki Umeda
+  - Atsushi Kato
+  - Hirofumi Uchimiya
+  publisher: Nucleic Acids Research
+  date: '1993-01-01'
+  link: https://doi.org/bnrtbc
   plugin: sources.py
   file: sources.yaml

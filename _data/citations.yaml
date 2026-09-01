@@ -217,27 +217,11 @@
   - Casey S. Greene
   - Anthony Gitter
   publisher: PLOS Computational Biology
-  date: '2020-12-04'
+  date: '2019-06-24'
   link: https://doi.org/c7np
   orcid: 0000-0002-4655-3773
-  plugin: sources.py
-  file: sources.yaml
-  type: paper
-  description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
-  buttons:
-  - type: manubot
-    link: https://greenelab.github.io/meta-review/
-  - type: source
-    text: Manuscript Source
-    link: https://github.com/greenelab/meta-review
-  - type: website
-    link: http://manubot.org/
-  tags:
-  - open science
-  - collaboration
-  repo: greenelab/meta-review
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1101/573782
   title: Sequential compression of gene expression across dimensionalities and methods
     reveals no single best method or dimensionality
@@ -253,30 +237,133 @@
   orcid: 0000-0002-4655-3773
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1016/j.csbj.2020.05.017
-  title: Constructing knowledge graphs and their biomedical applications
+- id: doi:10.1002/pld3.70179
+  title: "CISP, an Intrinsically Disordered Cold\u2010Inducible Barley Protein, Functions\
+    \ as a Small RNA Chaperone"
   authors:
-  - David N. Nicholson
-  - Casey S. Greene
-  publisher: Computational and Structural Biotechnology Journal
-  date: '2020-01-01'
-  link: https://doi.org/gg7m48
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
+  - Yutaro Okumura
+  - Md. Maksudul Haque
+  - "Shin\u2010ichiro Kidou"
+  publisher: Plant Direct
+  date: '2026-06-01'
+  link: https://doi.org/hchb7b
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.7554/eLife.32822
-  title: Sci-Hub provides access to nearly all scholarly literature
+- id: doi:10.1088/1755-1315/1593/1/012047
+  title: 'Revealing microplastic pollution hotspots in Indonesia freshwaters: A synthesis
+    of methodological biases, anthropogenic drivers, and predictive hotspot mapping'
   authors:
-  - Daniel S Himmelstein
-  - Ariel Rodriguez Romero
-  - Jacob G Levernier
-  - Thomas Anthony Munro
-  - Stephen Reid McLaughlin
-  - Bastian Greshake Tzovaras
-  - Casey S Greene
-  publisher: eLife
-  date: '2018-03-01'
-  link: https://doi.org/ckcj
-  image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
+  - A Fadhilah
+  - R Haribowo
+  - Y Okumura
+  - M N I Wahid
+  - S Kidou
+  publisher: 'IOP Conference Series: Earth and Environmental Science'
+  date: '2026-03-01'
+  link: https://doi.org/hchb7c
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1088/1755-1315/1593/1/012048
+  title: 'Deep-MAP: A user-friendly platform for deep learning-based microplastics
+    classification'
+  authors:
+  - Y Okumura
+  - A Fadhilah
+  - R Haribowo
+  - S Kidou
+  publisher: 'IOP Conference Series: Earth and Environmental Science'
+  date: '2026-03-01'
+  link: https://doi.org/hchb7d
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/s00344-026-12071-9
+  title: A Small Intrinsically Disordered Protein BdCISP2 in Brachypodium Distachyon
+    Enhances Cold Tolerance
+  authors:
+  - Arriel Fadhilah
+  - Mengchao Ying
+  - Yuuri Ito
+  - Shin-ichiro Kidou
+  publisher: Journal of Plant Growth Regulation
+  date: '2026-02-03'
+  link: https://doi.org/hchb7f
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/s11248-025-00453-w
+  title: 'Highly efficient direct seed transformation protocol for japonica rice (Oryza
+    sativa L.) by Agrobacterium tumefaciens: overcoming the complexity of callus regeneration
+    and avoiding the occurrence of somaclonal-mutations'
+  authors:
+  - Md Maksudul Haque
+  - Yutaro Okumura
+  - Shin-ichiro Kidou
+  publisher: Transgenic Research
+  date: '2025-07-28'
+  link: https://doi.org/hchb7g
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1271/kagakutoseibutsu.62.365
+  title: "\u4F4E\u6E29\u306B\u66DD\u3055\u308C\u305F\u30AA\u30AA\u30E0\u30AE\u306E\
+    \u6839\u3067\u767A\u73FE\u3059\u308B\u8B0E\u591A\u304D\u907A\u4F1D\u5B50&lt;i&gt;CISP&lt;/i&gt;"
+  authors:
+  - Shin-ichiro KIDOU
+  publisher: KAGAKU TO SEIBUTSU
+  date: '2024-08-01'
+  link: https://doi.org/hchb7h
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1016/j.envexpbot.2019.05.009
+  title: Barley cold-induced CISP proteins contribute to the accumulation of heavy
+    metals in roots
+  authors:
+  - Mengchao Ying
+  - Hiroshi Yasuda
+  - Satoru Kobayashi
+  - Nobuhiko Sakurai
+  - Shin-ichiro Kidou
+  publisher: Environmental and Experimental Botany
+  date: '2019-09-01'
+  link: https://doi.org/hchb7j
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/s10725-019-00487-1
+  title: PHD type zinc finger protein PFP represses flowering by modulating FLC expression
+    in Arabidopsis thaliana
+  authors:
+  - Yuri Yokoyama
+  - Satoru Kobayashi
+  - Shin-ichiro Kidou
+  publisher: Plant Growth Regulation
+  date: '2019-03-18'
+  link: https://doi.org/g43bsq
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1016/j.plantsci.2017.04.011
+  title: Discovery of novel cold-induced  CISP  genes encoding small RNA-binding proteins
+    related to cold adaptation in barley
+  authors:
+  - Mengchao Ying
+  - Shin-ichiro Kidou
+  publisher: Plant Science
+  date: '2017-07-01'
+  link: https://doi.org/gbjx7p
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.11416/jibs.86.3_105
+  title: The physiological accumulation of mutant fibroin light chains induces an
+    unfolded protein response in the posterior silk gland of the Sericin cocoon <i>Nd-s<sup>D</sup></i>
+    strain of silkworm <i>Bombyx mori</i>
+  authors:
+  - Tadashi Takahashi
+  - Masao Miyazaki
+  - Shin-ichiro Kidou
+  - Yoshiki Matsui
+  - Ying An
+  - Taku Ozaki
+  - Koichi Suzuki
+  - Tetsuro Yamashita
+  publisher: Journal of Insect Biotechnology and Sericology
+  date: '2017-01-01'
+  link: https://doi.org/hchb7k
   plugin: sources.py
   file: sources.yaml

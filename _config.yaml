@@ -9,9 +9,8 @@ proofer: false
 # site social media and other links
 links:
   email: kidou@nsc.nagoya-cu.ac.jp
-  orcid: 0000-0001-8829-7950
-  リンク / Link: https://researchmap.jp/read0149166
-  ホーム / Home page: https://www.nagoya-cu.ac.jp/nsc/
+  home-page: https://www.nagoya-cu.ac.jp/nsc/
+  address: https://maps.app.goo.gl/DnnSDxsd6jG2uGi39
 
 ### jekyll settings
 

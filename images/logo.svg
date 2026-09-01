@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Abstract leaf blade background (Deep Teal) -->
+  <path d="M15,85 Q45,15 85,15 Q85,45 55,85 Q15,85 15,85 Z" fill="url(#grad1)"/>
+  
+  <!-- Elegant parallel leaf veins in Coral/Copper -->
+  <!-- Center main vein -->
+  <path d="M35,82 Q 60,48 83,17" stroke="#f9744b" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Inner left vein -->
+  <path d="M25,82 Q 48,42 77,16" stroke="#d84f2a" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Inner right vein -->
+  <path d="M45,82 Q 68,55 84,23" stroke="#d84f2a" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <defs>
+    <linearGradient id="grad1" x1="15" y1="85" x2="85" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#124d54"/> <!-- Deep Teal -->
+      <stop offset="100%" stop-color="#102937"/> <!-- Dark Navy -->
+    </linearGradient>
+  </defs>
+</svg>

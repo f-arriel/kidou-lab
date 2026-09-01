@@ -1,35 +1,37 @@
 ---
-title: Team
+title: メンバー / People
 nav:
-  order: 3
-  tooltip: About our team
+  order: 2
+  tooltip: 
 ---
 
-# {% include icon.html icon="fa-solid fa-users" %}Team
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+# {% include icon.html icon="fa-solid fa-people-group" %} メンバー / Team
 
 {% include section.html %}
 
-{% include list.html data="members" component="portrait" filter="role == 'pi'" %}
-{% include list.html data="members" component="portrait" filter="role != 'pi'" %}
+## 教員 / Faculty
 
-{% include section.html background="images/background.jpg" dark=true %}
+{% include list.html data="members" component="portrait" filter="role =~ /Professor/i" %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+## 研究員 / Research Staff
+
+{% include list.html data="members" component="portrait" filter="role =~ /Research Staff/i" %}
+
+## 博士後期課程 / PhD Students
+
+{% include list.html data="members" component="portrait" filter="role =~ /PhD/i" %}
+
+## 博士前期課程 / Master Students
+
+{% include list.html data="members" component="portrait" filter="role =~ /Master/i" %}
+
+## 学部生 / Undergraduate Students
+
+{% include list.html data="members" component="portrait" filter="role =~ /Undergraduate/i" %}
+
 
 {% include section.html %}
 
-{% capture content %}
+## 卒業生 / Alumni
 
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-
-{% endcapture %}
-
-{% include grid.html style="square" content=content %}
+{% include list.html data="members" component="portrait" filter="role =~ /alum/i" %}

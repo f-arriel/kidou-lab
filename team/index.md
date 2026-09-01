@@ -9,22 +9,22 @@ nav:
 
 {% include section.html %}
 
-## 教員 / Faculty
+## 教授 / Principal Investigator
 
-{% include list.html data="members" component="portrait" filter="role =~ /Professor/i" %}
+{% include list.html data="members" component="portrait" filter="role =~ /principal-investigator/i" %}
 
 
 ## 博士後期課程 / PhD Students
 
-{% include list.html data="members" component="portrait" filter="role =~ /PhD/i" %}
+{% include list.html data="members" component="portrait" filter="role =~ /phd/i" %}
 
 ## 博士前期課程 / Master Students
 
-{% include list.html data="members" component="portrait" filter="role =~ /Master/i" %}
+{% include list.html data="members" component="portrait" filter="role =~ /master/i" %}
 
 ## 学部生 / Undergraduate Students
 
-{% include list.html data="members" component="portrait" filter="role =~ /Undergraduate/i" %}
+{% include list.html data="members" component="portrait" filter="role =~ /undergrad/i" %}
 
 ## 研究員 / Research Staff
 

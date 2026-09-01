@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&display=swap");
+[data-dark=false] {
+  --primary: #2e7d32;
+  --secondary: #c8e6c9;
+  --text: #111827;
+  --background: #ffffff;
+  --background-alt: #f9fafb;
+  --light-gray: #e5e7eb;
+  --gray: #6b7280;
+  --dark-gray: #374151;
+  --overlay: #00000015;
+}
+
+[data-dark=true] {
+  --primary: #4ade80;
+  --secondary: #166534;
+  --text: #f9fafb;
+  --background: #111827;
+  --background-alt: #1f2937;
+  --light-gray: #374151;
+  --gray: #9ca3af;
+  --dark-gray: #d1d5db;
+  --overlay: #ffffff10;
+}
+
+:root {
+  --title: "Inter", "Noto Sans JP", sans-serif;
+  --heading: "Inter", "Noto Sans JP", sans-serif;
+  --body: "Inter", "Noto Sans JP", sans-serif;
+  --code: "Roboto Mono", monospace;
+  --large: 1.2rem;
+  --xl: 1.4rem;
+  --xxl: 1.6rem;
+  --thin: 300;
+  --regular: 400;
+  --semi-bold: 500;
+  --bold: 600;
+  --spacing: 1.8;
+  --compact: 1.4;
+  --rounded: 4px;
+  --shadow: 0 4px 6px -1px var(--overlay);
+  --transition: 0.2s ease;
+}
+
+/*# sourceMappingURL=-theme.css.map */

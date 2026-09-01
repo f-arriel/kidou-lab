@@ -1,7 +1,7 @@
 ---
 name: 奥村 祐太朗 / Yutaro Okumura
 image: images/YOkumura.jpg
-role: 博士前期課程2年 / Master Student
+role: master
 links:
   researchgate: Yutaro-Okumura-2
 ---

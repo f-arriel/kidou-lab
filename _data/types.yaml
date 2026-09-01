@@ -1,77 +1,71 @@
 # map general type to default/fallback icon, text, etc.
 
 # team member roles
-
 principal-investigator:
   icon: fa-solid fa-microscope
-  description: Principal Investigator
+  description: 教授 / Principal Investigator
 
 postdoc:
   icon: fa-solid fa-glasses
-  description: Postdoctoral Researcher
+  description: 研究員 / Postdoctoral Researcher
 
 phd:
   icon: fa-solid fa-graduation-cap
-  description: PhD Student
+  description: 博士後期課程 / PhD Student
+
+master:
+  icon: fa-solid fa-user-graduate
+  description: 博士前期課程 / Master Student
 
 undergrad:
-  icon: fa-solid fa-user-graduate
-  description: Undergraduate Student
-
-programmer:
-  icon: fa-solid fa-code
-  description: Programmer
-
-mascot:
-  icon: fa-solid fa-dog
-  description: Mascot
+  icon: fa-solid fa-book-open
+  description: 学部生 / Undergraduate Student
 
 # general
-
 link:
   icon: fa-solid fa-globe
-  text: Link
-  tooltip: Link
+  text: リンク / Link
+  tooltip: リンク / Link
 
 website:
   icon: fa-solid fa-globe
-  text: Website
-  tooltip: Website
+  text: ウェブサイト / Website
+  tooltip: ウェブサイト / Website
+  link: $VALUE
 
 external:
   icon: fa-solid fa-up-right-from-square
-  text: External Link
-  tooltip: External link
+  text: 外部リンク / External Link
+  tooltip: 外部リンク / External link
 
 home-page:
   icon: fa-solid fa-house-user
-  text: Home Page
-  tooltip: Home page
+  text: ホーム / Home Page
+  tooltip: ホーム / Home page
 
 email:
   icon: fa-solid fa-envelope
-  text: Email
-  tooltip: Email
+  text: メール / Email
+  tooltip: メール / Email
   link: mailto:$VALUE
 
 phone:
   icon: fa-solid fa-phone
-  text: Phone Number
-  tooltip: Phone number
+  text: 電話 / Phone Number
+  tooltip: 電話 / Phone number
   link: tel:$VALUE
 
 address:
   icon: fa-solid fa-map-location-dot
-  text: Address
-  tooltip: Address
+  text: 住所 / Address
+  tooltip: 住所 / Address
 
 search:
   icon: fa-solid fa-magnifying-glass
-  text: Search
-  tooltip: Search
+  text: 検索 / Search
+  tooltip: 検索 / Search
 
-# social media
-
+# social media & academic profiles
 orcid:
   icon: fa-brands fa-orcid
   text: ORCID
@@ -83,6 +77,18 @@ google-scholar:
   text: Google Scholar
   tooltip: Google Scholar
   link: https://scholar.google.com/citations?user=$VALUE
+
+researchgate:
+  icon: fa-brands fa-researchgate
+  text: ResearchGate
+  tooltip: ResearchGate
+  link: https://www.researchgate.net/profile/$VALUE
+
+researchmap:
+  icon: fa-solid fa-map-location-dot
+  text: Researchmap
+  tooltip: Researchmap
+  link: https://researchmap.jp/$VALUE
 
 github:
   icon: fa-brands fa-github
@@ -96,38 +102,13 @@ twitter:
   tooltip: Twitter
   link: https://twitter.com/$VALUE
 
-bluesky:
-  icon: fa-brands fa-bluesky
-  text: Bluesky
-  tooltip: Bluesky
-  link: https://bsky.app/profile/$VALUE
-
-facebook:
-  icon: fa-brands fa-facebook
-  text: Facebook
-  tooltip: Facebook
-  link: https://facebook.com/$VALUE
-
-instagram:
-  icon: fa-brands fa-instagram
-  text: Instagram
-  tooltip: Instagram
-  link: https://instagram.com/$VALUE
-
 youtube:
   icon: fa-brands fa-youtube
   text: YouTube
   tooltip: YouTube
   link: https://youtube.com/$VALUE
 
-linkedin:
-  icon: fa-brands fa-linkedin
-  text: LinkedIn
-  tooltip: LinkedIn
-  link: https://www.linkedin.com/in/$VALUE
-
 # alerts
-
 tip:
   icon: fa-solid fa-lightbulb
   color: "#d946ef"
@@ -153,36 +134,35 @@ error:
   color: "#ef4444"
 
 # publications
-
 paper:
   icon: fa-solid fa-scroll
-  text: Paper
-  tooltip: Paper
+  text: 論文 / Paper
+  tooltip: 論文 / Paper
 
 book:
   icon: fa-solid fa-book
-  text: Book
-  tooltip: Book
+  text: 著書 / Book
+  tooltip: 著書 / Book
 
 article:
   icon: fa-solid fa-newspaper
-  text: Article
-  tooltip: Article
+  text: 記事 / Article
+  tooltip: 記事 / Article
 
 journal:
   icon: fa-regular fa-newspaper
-  text: Journal
-  tooltip: Journal
+  text: 雑誌 / Journal
+  tooltip: 雑誌 / Journal
 
 preprint:
   icon: fa-regular fa-eye
-  text: Preprint
-  tooltip: Preprint
+  text: プレプリント / Preprint
+  tooltip: プレプリント / Preprint
 
 unpublished:
   icon: fa-regular fa-eye
-  text: Unpublished
-  tooltip: Unpublished
+  text: 未発表 / Unpublished
+  tooltip: 未発表 / Unpublished
 
 manubot:
   icon: manubot.svg
@@ -190,33 +170,17 @@ manubot:
   tooltip: Manubot
 
 # software
-
 docs:
   icon: fa-solid fa-book
-  text: Documentation
-  tooltip: Documentation
+  text: ドキュメント / Documentation
+  tooltip: ドキュメント / Documentation
 
 source:
   icon: fa-solid fa-code
-  text: Source
-  tooltip: Source code
-
-server:
-  icon: fa-solid fa-server
-  text: Server
-  tooltip: Server
-
-app:
-  icon: fa-solid fa-hand-pointer
-  text: App
-  tooltip: App
+  text: ソース / Source
+  tooltip: ソースコード / Source code
 
 data:
   icon: fa-solid fa-database
-  text: Data
-  tooltip: Data
-
-package:
-  icon: fa-solid fa-box
-  text: Package
-  tooltip: Package
+  text: データ / Data
+  tooltip: データ / Data

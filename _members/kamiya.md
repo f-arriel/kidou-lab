@@ -1,5 +1,5 @@
 ---
-name: 神谷 美咲
+name: 神谷 美咲 / Misaki Kamiya
 image: images/MKamiya.jpg
 role: 博士前期課程1年 / Master Student
 ---

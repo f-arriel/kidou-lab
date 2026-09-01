@@ -1,7 +1,16 @@
 ---
 ---
 
-# 木藤研究室へようこそ - Welcome to Kidou Lab
+<div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
+  <h1 style="margin-bottom: 5px; font-size: 2.5em;">木藤研 - Kidou Lab</h1>
+  <p style="font-size: 1.25em; color: var(--primary); font-weight: 500; margin-top: 0;">
+    植物生命科学 - Plant Physiology and Molecular Biology
+  </p>
+</div>
+
+{% include section.html %}
+
+## 木藤研究室へようこそ - Welcome to Kidou Lab
 
 遺伝子やタンパク質の機能解析を通じて、あなたも美しい生命現象の謎解きに参加しませんか？
 <br>
@@ -12,4 +21,4 @@ Join us in unraveling the beautiful mysteries of life phenomena through the func
 Barley is not only used as a main ingredient in beer and whiskey, but is also enjoyed in Japan as barley tea and barley rice. Additionally, because it is rich in the dietary fiber β-glucan, it is attracting attention as a health food. Barley is also highly tolerant to environmental stresses, particularly cold temperatures, allowing it to be cultivated in cold regions like Northern Europe where wheat cannot thrive. In our laboratory, we are working to unravel the molecular mechanisms behind barley's cold tolerance and β-glucan synthesis. We are also conducting research on floral bud formation using the model plant *Arabidopsis thaliana*. Although we are a small laboratory, we are working to elucidate the physiological mechanisms of plants at the molecular level. If you have an interest in plants, we warmly invite you to join our team!
 
 <br>
-<img src="images/Home.jpg" alt="Kidou Laboratory" style="display: block; margin: 0 auto; width: 100%; max-width: 900px; border-radius: 8px;">
+<img src="{{ '/images/Home.jpg' | relative_url }}" alt="Kidou Laboratory" style="display: block; margin: 0 auto; width: 100%; max-width: 900px; border-radius: 8px;">

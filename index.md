@@ -4,8 +4,6 @@
 # 木藤研究室へようこそ / Welcome to Kidou Laboratory
 
 {{ site.description }}
-<br>
-*{{ site.description_en }}*
 
 {% include section.html %}
 

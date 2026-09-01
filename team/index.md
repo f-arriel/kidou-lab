@@ -2,7 +2,7 @@
 title: メンバー / People
 nav:
   order: 2
-  tooltip:
+  tooltip: 
 ---
 
 # {% include icon.html icon="fa-solid fa-people-group" %} メンバー / Team
@@ -45,6 +45,15 @@ nav:
 {% include section.html %}
 
 # {% include icon.html icon="fa-solid fa-images" %} 活動写真 / Activity Photo Gallery
+
+<br>
+研究室の雰囲気や、懇親会・学会などの活動の様子をご紹介します。
+<br>
+*Introducing the atmosphere of the lab and our activities such as networking events and conferences.*
+<br><br>
+
+{% capture content %}
+
 <!-- Note: Make sure the image files exist in your "images/people/" directory and update the captions below -->
 
 {%

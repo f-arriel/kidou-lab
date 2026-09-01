@@ -1,5 +1,5 @@
 ---
-name: 山中 勇希
+name: 山中 勇希 / Yuki Yamanaka
 image: images/YYamanaka.jpg
 role: 博士前期課程1年 / Master Student
 ---

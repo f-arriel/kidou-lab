@@ -140,6 +140,43 @@ collections:
         widget: "markdown"
         required: false
 
+ # -----------------------------------------------------------
+  # Gallery  
+  #    
+  # -----------------------------------------------------------
+  
+  - name: "gallery"
+    label: "活動写真 / Photo Gallery"
+    label_singular: "写真 / Photo"
+    folder: "_gallery"
+    create: true
+    slug: "{{year}}-{{month}}-{{slug}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+    media_folder: "/images/people"
+    public_folder: "images/people"
+    identifier_field: "title"
+    fields:
+      - label: "見出し / Title"
+        name: "title"
+        widget: "string"
+        hint: "管理用の名前です。サイトには表示されません。"
+      - label: "日付 / Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        hint: "新しい写真が上に表示されます。"
+      - label: "写真 / Photo"
+        name: "image"
+        widget: "image"
+      - label: "説明 / Caption"
+        name: "caption"
+        widget: "string"
+        required: false
+
+
   # -----------------------------------------------------------
   # 3. PUBLICATIONS  ->  _data/sources-cms.yaml
   #    Requires the small _cite/util.py patch (see notes).

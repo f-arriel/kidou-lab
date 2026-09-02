@@ -40,6 +40,19 @@ nav:
 <br>
 {% endfor %}
 
+
+{% include section.html %}
+
+## 就職先 / Employment of Graduates
+
+{% assign jobs = site.employment | sort: "year" | reverse %}
+{% for job in jobs %}
+{{ job.year }}年　{{ job.degree }}　{{ job.organization }}{% if job.sector %}（{{ job.sector }}）{% endif %}
+<br>
+{% endfor %}
+
+
+
 {% include section.html %}
 
 # {% include icon.html icon="fa-solid fa-images" %} 活動写真 / Activity Photo Gallery

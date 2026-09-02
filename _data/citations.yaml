@@ -1,5 +1,35 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: 10.1016/j.envexpbot.2019.05.009
+  title: Barley cold-induced CISP proteins contribute to the accumulation of heavy
+    metals in roots
+  authors:
+  - Mengchao Ying
+  - Hiroshi Yasuda
+  - Satoru Kobayashi
+  - Nobuhiko Sakurai
+  - Shin-ichiro Kidou
+  publisher: Environmental and Experimental Botany
+  date: '2019-09-01'
+  link: https://doi.org/hchb7j
+  type: ''
+  image: ''
+  plugin: sources.py
+  file: sources-cms.yaml
+- id: 10.1007/s10725-019-00487-1
+  title: PHD type zinc finger protein PFP represses flowering by modulating FLC expression
+    in Arabidopsis thaliana
+  authors:
+  - Yuri Yokoyama
+  - Satoru Kobayashi
+  - Shin-ichiro Kidou
+  publisher: Plant Growth Regulation
+  date: '2019-03-18'
+  link: https://doi.org/g43bsq
+  type: ''
+  image: ''
+  plugin: sources.py
+  file: sources-cms.yaml
 - id: 10.1016/j.plgene.2026.100610
   title: Functional analysis of cold stress responsive barley CISP genes in transgenic
     rice

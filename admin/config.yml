@@ -117,11 +117,12 @@ collections:
         required: false
         hint: "空欄なら区分から自動で入ります。"
 
-      - label: "所属（任意）/ Affiliation"
+      - label: "所属 / Affiliation"
         name: "affiliation"
         widget: "string"
         required: false
-
+        hint: "卒業生の場合は卒業後の所属（例: パナソニック株式会社）"
+      
       - label: "リンク / Links"
         name: "links"
         widget: "object"

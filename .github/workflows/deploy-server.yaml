@@ -1,8 +1,6 @@
 name: deploy-server
 run-name: Deploy to university server
 
-# Start with manual runs only. Once a manual run succeeds,
-# uncomment the "push" block below to deploy on every commit.
 on:
   workflow_dispatch:
   # push:
@@ -15,6 +13,19 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
+
+      - name: Test whether the server is reachable
+        env:
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+        run: |
+          echo "--- DNS lookup ---"
+          getent hosts "$SFTP_HOST" || echo "!! hostname did not resolve"
+          echo "--- port 22 ---"
+          if timeout 15 bash -c "cat < /dev/null > /dev/tcp/$SFTP_HOST/22" 2>/dev/null; then
+            echo "OK: port 22 is open"
+          else
+            echo "!! port 22 unreachable - firewall, wrong host, or non-standard port"
+          fi
 
       - name: Install Ruby packages
         uses: ruby/setup-ruby@v1
@@ -34,14 +45,15 @@ jobs:
         env:
           SFTP_HOST: ${{ secrets.SFTP_HOST }}
           SFTP_USER: ${{ secrets.SFTP_USER }}
-          SFTP_PASS: ${{ secrets.SFTP_PASS }}
+          SSHPASS: ${{ secrets.SFTP_PASS }}
           SFTP_PATH: ${{ secrets.SFTP_PATH }}
         run: |
-          sudo apt-get update && sudo apt-get install -y lftp
+          sudo apt-get update && sudo apt-get install -y lftp sshpass
           lftp -c "
             set sftp:auto-confirm yes;
-            set net:max-retries 2;
-            set net:timeout 20;
-            open -u \"$SFTP_USER\",\"$SFTP_PASS\" sftp://$SFTP_HOST;
+            set sftp:connect-program \"sshpass -e ssh -a -x -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null\";
+            set net:max-retries 1;
+            set net:timeout 30;
+            open -u \"$SFTP_USER\",ignored sftp://$SFTP_HOST;
             mirror -R --verbose _site/ \"$SFTP_PATH\"
           "

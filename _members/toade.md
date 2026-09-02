@@ -1,5 +1,5 @@
 ---
-name: Taode Bilige
+name: Taode Bilige / Taode Bilige
 username: toade
 role: alumni
 graduation_year: 2017

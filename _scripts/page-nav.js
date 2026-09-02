@@ -3,7 +3,7 @@
   and highlights whichever section you are currently reading.
 
   runs automatically on any page with 2 or more h1/h2 headings.
-  add data-no-page-nav to <body> or <main> to opt a page out.
+  add data-no-page-nav to any element on the page to opt that page out.
 */
 
 {
@@ -16,8 +16,7 @@
   const onLoad = () => {
     const main = document.querySelector("main");
     if (!main) return;
-    if (main.dataset.noPageNav !== undefined) return;
-    if (document.body.dataset.noPageNav !== undefined) return;
+    if (document.querySelector("[data-no-page-nav]")) return;
 
     const headings = [...main.querySelectorAll(SELECTOR)];
     if (headings.length < MIN_HEADINGS) return;

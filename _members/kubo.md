@@ -1,5 +1,5 @@
 ---
-name: 久保 風仁
+name: 久保 風仁 / Futo Kubo
 username: kubo
 role: alumni
 graduation_year: 2025

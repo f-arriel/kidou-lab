@@ -4,6 +4,6 @@ username: honda
 role: undergrad
 image: ''
 description: ''
-affiliation: ''
+affiliation: 総合生命理学部3年
 links: null
 ---

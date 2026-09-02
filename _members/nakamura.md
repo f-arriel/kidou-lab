@@ -1,8 +1,11 @@
 ---
-name: 仲村 慶永
+name: 仲村 慶永 / Keito Nakamura
 username: nakamura
-image: images/KNakamura.jpg
 role: undergrad
+image: images/KNakamura.jpg
+description: 学部4年生
+affiliation: 総合生命理学部
+links: null
 ---
 
 **研究テーマ:** オオムギCISPが持つRNAシャペロン活性ドメインの同定

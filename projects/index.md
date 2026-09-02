@@ -25,13 +25,4 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-hands-holding-child" %} 社会貢献 / Social Contribution
 
-{% assign activities = site.outreach | sort: "date" | reverse %}
-{% for item in activities %}
-### {{ item.title }}
-
-{{ item.date | date: "%Y年%-m月%-d日" }}　|　{{ item.category }}{% if item.venue %}　|　{{ item.venue }}{% endif %}
-
-{{ item.content }}
-{% if item.link %}[詳細 / More information]({{ item.link }}){% endif %}
-
-{% endfor %}
+{% include outreach-list.html %}

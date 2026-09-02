@@ -1,5 +1,6 @@
 ---
 name: 稲生 奏代子
+username: inou
 image: images/SInou.jpg
 role: undergrad
 ---

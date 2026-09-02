@@ -2,12 +2,13 @@
   builds a floating panel that links to each section (h2) on the page,
   and highlights whichever section you are currently reading.
 
-  runs automatically on any page with 2 or more h2 headings.
+  runs automatically on any page with 2 or more h1/h2 headings.
   add data-no-page-nav to <body> or <main> to opt a page out.
 */
 
 {
   const MIN_HEADINGS = 2;
+  const SELECTOR = "h1, h2";
 
   // distance from the top of the viewport to treat as "current"
   const offset = () => (document.querySelector("header")?.clientHeight || 0) + 24;
@@ -18,7 +19,7 @@
     if (main.dataset.noPageNav !== undefined) return;
     if (document.body.dataset.noPageNav !== undefined) return;
 
-    const headings = [...main.querySelectorAll("h2")];
+    const headings = [...main.querySelectorAll(SELECTOR)];
     if (headings.length < MIN_HEADINGS) return;
 
     // collect targets, generating ids where the template did not

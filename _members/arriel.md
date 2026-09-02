@@ -1,5 +1,5 @@
 ---
-name: Arriel Fadhilah
+name: Arriel Fadhilah / Arriel Fadhilah
 username: arriel
 role: phd
 graduation_year: null

@@ -1,5 +1,5 @@
 ---
-ttitle: 業績・社会貢献 / Publications & Outreach
+title: 業績・社会貢献 / Publications & Outreach
 nav:
   order: 3
   tooltip: 

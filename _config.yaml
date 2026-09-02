@@ -44,9 +44,15 @@ collections:
   # generate page for each post
   posts:
     output: true
-  #hidden gallery  
   gallery:
     output: false
+  themes:
+    output: false
+  employment:
+    output: false
+  outreach:
+    output: false
+    
 
 # jekyll plugins
 plugins:

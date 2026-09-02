@@ -3,7 +3,7 @@ name: Arriel Fadhilah
 username: arriel
 role: phd
 image: images/Arriel.jpg
-description: 博士前期課程1年
+description: 博士1年
 affiliation: 理学研究科
 links:
   email: ''

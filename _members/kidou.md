@@ -1,20 +1,27 @@
 ---
 name: 木藤 新一郎 / Shin-ichiro Kidou
 username: kidou
-image: images/SKidou.jpg
 role: principal-investigator
+image: images/SKidou.jpg
+description: ''
+affiliation: ''
 links:
   email: kidou@nsc.nagoya-cu.ac.jp
   orcid: 0000-0001-8829-7950
+  google-scholar: ''
+  researchgate: ''
+  researchmap: ''
   website: https://researchmap.jp/read0149166
+  github: ''
 ---
 
-**居室：** 理学研究科 ５号間2階255室  
-**職名：** 教授（生体制御情報系）  
+**居室：** 理学研究科 5号館2階255室  
+**職名：** 教授（生命科学）  
 **学位：** 博士（理学）  
 **専門：** 分子生物学、植物生理学、遺伝子工学  
 
 ### 担当講義科目
+
 * 植物とバイオテクノロジー（教養科目）
 * 植物の多様性と環境（教養科目）
 * 自然科学実験 I：生物学（教養科目）
@@ -30,7 +37,9 @@ links:
 * 生命情報学特講（大学院・博士後期）
 
 ### 研究キーワード
+
 植物発育制御、環境ストレス応答、植物細胞壁、遺伝子操作、遺伝子機能解析、タンパク質機能解析
 
 ### 略歴
+
 1964年6月 名古屋市生まれ

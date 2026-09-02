@@ -1,5 +1,6 @@
 ---
 name: 山中 勇希 / Yuki Yamanaka
+username: yamanaka
 image: images/YYamanaka.jpg
 role: master
 ---

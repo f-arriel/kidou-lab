@@ -1,9 +1,10 @@
 backend:
   name: git-gateway
   branch: main
+  site_domain: spectacular-valkyrie-c44d87.netlify.app
 
-media_folder: "images" # Root image folder
-public_folder: "/images"
+media_folder: "images/news"
+public_folder: "/images/news"
 
 collections:
   # 1. THE NEWS SECTION (Folder Collection)

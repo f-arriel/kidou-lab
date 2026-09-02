@@ -23,5 +23,37 @@ layout: default
 
 <!-- Member biography and main content -->
 <div class="member-content">
+  {% assign type = site.data.types[page.role] %}
+
+  <dl class="member-facts">
+    {% if type %}
+      <div class="member-fact">
+        <dt>区分 / Position</dt>
+        <dd>{{ type.description }}</dd>
+      </div>
+    {% endif %}
+
+    {% if page.description %}
+      <div class="member-fact">
+        <dt>学年・肩書き / Title</dt>
+        <dd>{{ page.description }}</dd>
+      </div>
+    {% endif %}
+
+    {% if page.affiliation %}
+      <div class="member-fact">
+        <dt>所属 / Affiliation</dt>
+        <dd>{{ page.affiliation }}</dd>
+      </div>
+    {% endif %}
+
+    {% if page.graduation_year %}
+      <div class="member-fact">
+        <dt>卒業年 / Year left</dt>
+        <dd>{{ page.graduation_year }}</dd>
+      </div>
+    {% endif %}
+  </dl>
+
   {{ content }}
 </div>

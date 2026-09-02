@@ -16,5 +16,13 @@ links:
   github: https://github.com/f-arriel
 ---
 
+**Educational Background:**
+
+PhD, _Molecular Biology_ (2025 - Present), Nagoya City University 
+
+Master, _Molecular Biology_ (2023 - 2025), Nagoya City University
+
+Bachelor, _Environmental Engineering_ (2019 - 2023), Brawijaya University
+
 **研究テーマ / Research Theme:**
 Role of disordered CISP family proteins in abiotic stress

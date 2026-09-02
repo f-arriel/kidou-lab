@@ -47,11 +47,13 @@
     %}
     {% for page in pages %}
       {% if page.nav %}
-        <a
+        {% assign parts = page.title | split: " / " %}
+        
           href="{{ page.dir | relative_url | uri_escape }}"
           data-tooltip="{{ page.nav.tooltip | xml_escape }}"
         >
-          {{ page.title }}
+          <span class="nav-ja">{{ parts[0] }}</span>
+          {% if parts[1] %}<span class="nav-en">{{ parts[1] }}</span>{% endif %}
         </a>
       {% endif %}
     {% endfor %}

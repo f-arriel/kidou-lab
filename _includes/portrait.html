@@ -36,15 +36,13 @@
       </span>
     {% endif %}
 
-    {% if member.description or type %}
+    {% comment %}
+      always show the standard role label so every card matches.
+      custom description / affiliation live on the member page instead.
+    {% endcomment %}
+    {% if type %}
       <span class="portrait-description">
-        {{ member.description | default: type.description }}
-      </span>
-    {% endif %}
-
-    {% if member.affiliation %}
-      <span class="portrait-affiliation">
-        {{ member.affiliation }}
+        {{ type.description }}
       </span>
     {% endif %}
   </a>

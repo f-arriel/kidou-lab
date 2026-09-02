@@ -1,5 +1,6 @@
 ---
 name: Haque Md. Maksudul
+username: haque
 image: images/Haque.jpg
 role: phd
 links:

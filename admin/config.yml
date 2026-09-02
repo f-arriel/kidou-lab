@@ -7,7 +7,6 @@ backend:
   name: github
   repo: f-arriel/kidou-lab
   branch: main
-  base_url: https://sveltia-cms-auth.fadhilah-arriel.workers.dev
 
 # Default upload location (overridden per collection below)
 media_folder: "images"
@@ -106,6 +105,13 @@ collections:
           - { label: "学部生 / Undergraduate Student", value: "undergrad" }
           - { label: "卒業生 / Alumni", value: "alumni" }
 
+      - label: "卒業年 / Year left"
+        name: "graduation_year"
+        widget: "number"
+        value_type: "int"
+        required: false
+        hint: "卒業生のみ。新しい順に並びます。"
+
       - label: "顔写真 / Portrait"
         name: "image"
         widget: "image"
@@ -117,12 +123,11 @@ collections:
         required: false
         hint: "空欄なら区分から自動で入ります。"
 
-      - label: "所属 / Affiliation"
+      - label: "所属（任意）/ Affiliation"
         name: "affiliation"
         widget: "string"
         required: false
-        hint: "卒業生の場合は卒業後の所属（例: パナソニック株式会社）"
-      
+
       - label: "リンク / Links"
         name: "links"
         widget: "object"
@@ -142,11 +147,147 @@ collections:
         widget: "markdown"
         required: false
 
- # -----------------------------------------------------------
-  # Gallery  
-  #    
   # -----------------------------------------------------------
-  
+  # 3. RESEARCH THEMES  ->  _themes/*.md
+  # -----------------------------------------------------------
+  - name: "themes"
+    label: "研究テーマ / Research Themes"
+    label_singular: "テーマ / Theme"
+    folder: "_themes"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+    media_folder: "/images"
+    public_folder: "images"
+    identifier_field: "title"
+    view_groups:
+      - label: "状態 / Status"
+        field: "status"
+    fields:
+      - label: "テーマ名 / Title"
+        name: "title"
+        widget: "string"
+        hint: "例: 天然変性タンパク質と低温ストレス / Disordered Proteins to Survive Cold"
+      - label: "状態 / Status"
+        name: "status"
+        widget: "select"
+        options:
+          - { label: "現在のテーマ / Current", value: "current" }
+          - { label: "過去のテーマ / Past", value: "past" }
+      - label: "表示順 / Order"
+        name: "order"
+        widget: "number"
+        value_type: "int"
+        required: false
+        hint: "小さい数字が上に表示されます。"
+      - label: "画像 / Image"
+        name: "image"
+        widget: "image"
+        required: false
+      - label: "説明 / Description"
+        name: "body"
+        widget: "markdown"
+
+  # -----------------------------------------------------------
+  # 4. EMPLOYMENT  ->  _employment/*.md
+  # -----------------------------------------------------------
+  - name: "employment"
+    label: "就職先 / Employment"
+    label_singular: "就職先 / Employer"
+    folder: "_employment"
+    create: true
+    slug: "{{year}}-{{slug}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+    identifier_field: "organization"
+    fields:
+      - label: "就職先 / Organization"
+        name: "organization"
+        widget: "string"
+        hint: "組織名のみを記載してください（個人名は不要）。"
+      - label: "年 / Year"
+        name: "year"
+        widget: "number"
+        value_type: "int"
+      - label: "課程 / Degree"
+        name: "degree"
+        widget: "select"
+        required: false
+        options:
+          - { label: "博士後期課程 / PhD", value: "博士後期課程" }
+          - { label: "博士前期課程 / Master", value: "博士前期課程" }
+          - { label: "学部 / Undergraduate", value: "学部" }
+      - label: "業種 / Sector"
+        name: "sector"
+        widget: "string"
+        required: false
+        hint: "任意。例: 食品、製薬、教育、公務員"
+
+  # -----------------------------------------------------------
+  # 5. SOCIAL CONTRIBUTION  ->  _outreach/*.md
+  # -----------------------------------------------------------
+  - name: "outreach"
+    label: "社会貢献 / Social Contribution"
+    label_singular: "活動 / Activity"
+    folder: "_outreach"
+    create: true
+    slug: "{{year}}-{{month}}-{{slug}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+    media_folder: "/images/outreach"
+    public_folder: "images/outreach"
+    identifier_field: "title"
+    view_groups:
+      - label: "種別 / Category"
+        field: "category"
+    fields:
+      - label: "活動名 / Title"
+        name: "title"
+        widget: "string"
+      - label: "日付 / Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+      - label: "種別 / Category"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "公開講座 / Public lecture", value: "公開講座" }
+          - { label: "出前授業 / School outreach", value: "出前授業" }
+          - { label: "オープンキャンパス / Open campus", value: "オープンキャンパス" }
+          - { label: "取材・報道 / Media", value: "取材・報道" }
+          - { label: "学会運営 / Academic service", value: "学会運営" }
+          - { label: "地域連携 / Community", value: "地域連携" }
+          - { label: "その他 / Other", value: "その他" }
+      - label: "主催・場所 / Host or venue"
+        name: "venue"
+        widget: "string"
+        required: false
+      - label: "担当者 / Participants"
+        name: "participants"
+        widget: "string"
+        required: false
+        hint: "任意。例: 木藤、加藤"
+      - label: "関連リンク / Link"
+        name: "link"
+        widget: "string"
+        required: false
+        hint: "任意。報道記事や告知ページのURL"
+      - label: "写真 / Photo"
+        name: "image"
+        widget: "image"
+        required: false
+      - label: "内容 / Description"
+        name: "body"
+        widget: "markdown"
+        required: false
+
+  # -----------------------------------------------------------
+  # 6. PHOTO GALLERY  ->  _gallery/*.md
+  # -----------------------------------------------------------
   - name: "gallery"
     label: "活動写真 / Photo Gallery"
     label_singular: "写真 / Photo"
@@ -178,9 +319,8 @@ collections:
         widget: "string"
         required: false
 
-
   # -----------------------------------------------------------
-  # 3. PUBLICATIONS  ->  _data/sources-cms.yaml
+  # 7. PUBLICATIONS  ->  _data/sources-cms.yaml
   #    Requires the small _cite/util.py patch (see notes).
   # -----------------------------------------------------------
   - name: "publications"
@@ -212,7 +352,7 @@ collections:
                 required: false
 
   # -----------------------------------------------------------
-  # 4. SITE PAGES  ->  index.md, research/, team/, contact/, ...
+  # 8. SITE PAGES  ->  index.md, research/, team/, contact/, ...
   #    Body is a plain textarea on purpose: these pages contain
   #    raw HTML and Liquid tags that a rich-text editor would break.
   # -----------------------------------------------------------
@@ -255,7 +395,7 @@ collections:
               - { label: "説明 / Tooltip", name: "tooltip", widget: "string", required: false }
           - { label: "本文 / Body (HTML + Markdown)", name: "body", widget: "text" }
 
-      - label: "業績ページ / Publications page"
+      - label: "業績・社会貢献ページ / Publications page"
         name: "projects"
         file: "projects/index.md"
         fields:

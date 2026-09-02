@@ -3,9 +3,17 @@ name: Arriel Fadhilah
 username: arriel
 role: phd
 image: images/Arriel.jpg
+description: 博士前期課程1年
+affiliation: 理学研究科
 links:
-  researchgate: Arriel-Fadhilah
+  email: ''
+  orcid: ''
   google-scholar: aNMrAQYAAAAJ
+  researchgate: Arriel-Fadhilah
+  researchmap: ''
+  website: ''
+  github: ''
 ---
-**研究テーマ / Research Theme:**\
+
+\*\*研究テーマ / Research Theme:\*\*\
 Role of disordered CISP family proteins in abiotic stress

@@ -2,7 +2,7 @@
 name: 久保 風仁 / Futo Kubo
 username: kubo
 role: alumni
-graduation_year: 2025
+graduation_year: 2023
 image: ''
 description: ''
 affiliation: ''

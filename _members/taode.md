@@ -1,5 +1,6 @@
 ---
 name: Taode Bilige
+username: taode
 image: images/Taode.jpg
 role: research-staff
 ---

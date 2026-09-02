@@ -1,0 +1,56 @@
+{% comment %}
+  renders every entry in _outreach as a compact dated list.
+  usage:  {% include outreach-list.html %}
+  optional:  {% include outreach-list.html limit=5 %}
+{% endcomment %}
+
+{% assign activities = site.outreach | sort: "date" | reverse %}
+{% if include.limit %}
+  {% assign activities = activities | slice: 0, include.limit %}
+{% endif %}
+
+<div class="outreach">
+  {% for item in activities %}
+    <article class="outreach-item">
+      <div class="outreach-date">
+        <span class="outreach-year">{{ item.date | date: "%Y" }}</span>
+        <span class="outreach-day">{{ item.date | date: "%-m.%-d" }}</span>
+      </div>
+
+      <div class="outreach-main">
+        <h3 class="outreach-title">{{ item.title }}</h3>
+
+        <div class="outreach-meta">
+          {% if item.category %}
+            <span class="outreach-tag">{{ item.category }}</span>
+          {% endif %}
+          {% if item.venue %}
+            <span class="outreach-venue">{{ item.venue }}</span>
+          {% endif %}
+          {% if item.participants %}
+            <span class="outreach-people">{{ item.participants }}</span>
+          {% endif %}
+        </div>
+
+        {% assign text = item.content | strip %}
+        {% if text != "" %}
+          <div class="outreach-text">{{ text | markdownify }}</div>
+        {% endif %}
+
+        {% if item.link %}
+          <a class="outreach-link" href="{{ item.link }}">詳細 / More information</a>
+        {% endif %}
+      </div>
+
+      {% if item.image %}
+        <a class="outreach-thumb" href="{{ item.image | relative_url | uri_escape }}">
+          <img
+            src="{{ item.image | relative_url | uri_escape }}"
+            alt="{{ item.title }}"
+            loading="lazy"
+          >
+        </a>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>

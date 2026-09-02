@@ -3,7 +3,7 @@ name: 稲生 奏代子 / Soyoko Ino
 username: inou
 role: undergrad
 image: images/SInou.jpg
-description: 4年生
+description: 学部4年生
 affiliation: 総合生命理学部
 links: null
 ---

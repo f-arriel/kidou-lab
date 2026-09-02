@@ -9,6 +9,10 @@ postdoc:
   icon: "fa-solid fa-glasses"
   description: "研究員 / Postdoctoral Researcher"
 
+research-staff:
+  icon: "fa-solid fa-flask"
+  description: "研究員 / Research Staff"
+
 phd:
   icon: "fa-solid fa-graduation-cap"
   description: "博士後期課程 / PhD Student"

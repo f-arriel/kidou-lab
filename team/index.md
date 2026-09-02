@@ -51,10 +51,10 @@ nav:
 <br><br>
 
 {% capture content %}
-  {% assign photos = site.gallery | sort: "date" | reverse %}
-  {% for photo in photos %}
-    {% include figure.html image=photo.image caption=photo.caption width="100%" %}
-  {% endfor %}
+{% assign photos = site.gallery | sort: "date" | reverse %}
+{% for photo in photos %}
+{% include figure.html image=photo.image caption=photo.caption width="100%" %}
+{% endfor %}
 {% endcapture %}
 
 {% include grid.html content=content %}

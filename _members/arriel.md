@@ -1,5 +1,6 @@
 ---
 name: Arriel Fadhilah
+username: arriel
 role: phd
 image: images/Arriel.jpg
 links:

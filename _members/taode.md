@@ -1,7 +1,8 @@
 ---
-name: Taode Bilige
+name: Taode Bilige / Taode Bilige
 username: taode
 role: research-staff
+graduation_year: null
 image: images/Taode.jpg
 description: 研究員
 affiliation: 理学研究科

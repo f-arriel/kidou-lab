@@ -40,6 +40,9 @@ collections:
   # generate page for each post
   posts:
     output: true
+  #hidden gallery  
+  gallery:
+    output: false
 
 # jekyll plugins
 plugins:

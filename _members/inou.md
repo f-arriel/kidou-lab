@@ -1,8 +1,11 @@
 ---
-name: 稲生 奏代子
+name: 稲生 奏代子 / Soyoko Ino
 username: inou
-image: images/SInou.jpg
 role: undergrad
+image: images/SInou.jpg
+description: 4年生
+affiliation: 総合生命理学部
+links: null
 ---
 
 **研究テーマ:** OsP23kの発現解析とSi耐性への寄与

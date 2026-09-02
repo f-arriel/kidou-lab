@@ -52,8 +52,6 @@ nav:
 *Lab atmosphere and activities*
 <br><br>
 
-{% capture content %}
-
 <!-- Note: Make sure the image files exist in your "images/people/" directory and update the captions below -->
 
 {% capture content %}

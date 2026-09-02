@@ -1,5 +1,6 @@
 ---
 name: 神谷 美咲 / Misaki Kamiya
+username: kamiya
 image: images/MKamiya.jpg
 role: master
 ---

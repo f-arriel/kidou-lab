@@ -104,6 +104,7 @@ collections:
           - { label: "博士後期課程 / PhD Student", value: "phd" }
           - { label: "博士前期課程 / Master Student", value: "master" }
           - { label: "学部生 / Undergraduate Student", value: "undergrad" }
+          - { label: "卒業生 / Alumni", value: "alumni" }
 
       - label: "顔写真 / Portrait"
         name: "image"

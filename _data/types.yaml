@@ -25,6 +25,10 @@ undergrad:
   icon: "fa-solid fa-book-open"
   description: "学部生 / Undergraduate Student"
 
+alumni:
+  icon: "fa-solid fa-user-check"
+  description: "卒業生 / Alumni"
+
 # general
 link:
   icon: "fa-solid fa-globe"

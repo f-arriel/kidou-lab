@@ -144,6 +144,12 @@ def load_data(path):
     except Exception:
         raise Exception("Can't parse file. Make sure it's valid YAML.")
 
+    # unwrap files written by the CMS, which nests the list under one key
+    if isinstance(data, dict) and len(data) == 1:
+        only = list(data.values())[0]
+        if isinstance(only, list):
+            data = only
+
     # if no errors, return data
     return data
 

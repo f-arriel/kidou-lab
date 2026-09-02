@@ -1,5 +1,6 @@
 ---
 name: 奥村 祐太朗 / Yutaro Okumura
+username: okumura
 image: images/YOkumura.jpg
 role: master
 links:

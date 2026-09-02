@@ -1,5 +1,6 @@
 ---
 name: 小林 幸世
+username: kobayashi
 image: images/SKobayashi.jpg
 role: undergrad
 ---

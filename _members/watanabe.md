@@ -1,5 +1,6 @@
 ---
 name: 渡邉 栞夕 / Shuu Watanabe
+username: watanabe
 image: images/SWatanabe.jpg
 role: master
 ---

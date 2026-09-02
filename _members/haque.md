@@ -1,10 +1,18 @@
 ---
 name: Haque Md. Maksudul
 username: haque
-image: images/Haque.jpg
 role: phd
+image: images/Haque.jpg
+description: 博士後期課程3年
+affiliation: 理学研究科
 links:
+  email: ''
+  orcid: ''
+  google-scholar: ''
   researchgate: Md-Maksudul-Haque-2
+  researchmap: ''
+  website: ''
+  github: ''
 ---
 
 **研究テーマ / Research Theme:**  

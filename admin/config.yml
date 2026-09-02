@@ -1,14 +1,12 @@
 # =============================================================
-#  Kidou Lab — Decap CMS configuration
+#  Kidou Lab — Sveltia CMS configuration
 #  Tailored to the greenelab/lab-website-template structure
 # =============================================================
 
 backend:
-  name: git-gateway
+  name: github
+  repo: f-arriel/kidou-lab
   branch: main
-
-# Show the admin UI in Japanese
-locale: ja
 
 # Default upload location (overridden per collection below)
 media_folder: "images"

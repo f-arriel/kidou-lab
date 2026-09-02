@@ -1,8 +1,11 @@
 ---
 name: Taode Bilige
 username: taode
-image: images/Taode.jpg
 role: research-staff
+image: images/Taode.jpg
+description: 研究員
+affiliation: 理学研究科
+links: null
 ---
 
 **研究テーマ:** イネ科植物のシリカ形成機構におけるP23kの機能解析

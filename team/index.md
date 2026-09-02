@@ -47,55 +47,20 @@ nav:
 # {% include icon.html icon="fa-solid fa-images" %} 活動写真 / Activity Photo Gallery
 
 <br>
-研究室の雰囲気や、懇親会・学会などの活動の様子をご紹介します。
+研究室の雰囲気や活動の様子をご紹介します。
 <br>
-*Introducing the atmosphere of the lab and our activities such as networking events and conferences.*
+*Lab atmosphere and activities*
 <br><br>
 
 {% capture content %}
 
 <!-- Note: Make sure the image files exist in your "images/people/" directory and update the captions below -->
 
-{%
-  include figure.html
-  image="images/people/hanami.jpg"
-  caption="花見 (Hanami) in Spring 2024."
-  link="people"
-  width="100%"
-%}
-
-{%
-  include figure.html
-  image="images/people/end_of_year_party.jpg"
-  caption="End-of-year lab dinner and celebration."
-  link="people"
-  width="100%"
-%}
-
-{%
-  include figure.html
-  image="images/people/barley_field.jpg"
-  caption="Fieldwork visiting the barley research plots."
-  link="people"
-  width="100%"
-%}
-
-{%
-  include figure.html
-  image="images/people/conference_2023.jpg"
-  caption="Group photo at the Plant Physiology Conference 2023."
-  link="people"
-  width="100%"
-%}
-
-{%
-  include figure.html
-  image="images/people/lab_working.jpg"
-  caption="Active discussion in the laboratory."
-  link="people"
-  width="100%"
-%}
-
+{% capture content %}
+  {% assign photos = site.gallery | sort: "date" | reverse %}
+  {% for photo in photos %}
+    {% include figure.html image=photo.image caption=photo.caption width="100%" %}
+  {% endfor %}
 {% endcapture %}
 
 {% include grid.html content=content %}

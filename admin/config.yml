@@ -1,41 +1,257 @@
+# =============================================================
+#  Kidou Lab — Decap CMS configuration
+#  Tailored to the greenelab/lab-website-template structure
+# =============================================================
+
 backend:
   name: git-gateway
   branch: main
 
-media_folder: "images/news"
-public_folder: "/images/news"
+# Show the admin UI in Japanese
+locale: ja
+
+# Default upload location (overridden per collection below)
+media_folder: "images"
+public_folder: "images"
 
 collections:
+  # -----------------------------------------------------------
+  # 1. NEWS POSTS  ->  _posts/*.md
+  # -----------------------------------------------------------
   - name: "news"
-    label: "Lab News"
+    label: "お知らせ / Lab News"
+    label_singular: "お知らせ / News post"
     folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+    media_folder: "/images/news"
+    public_folder: "images/news"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - label: "タイトル / Title"
+        name: "title"
+        widget: "string"
 
+      - label: "日付 / Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD HH:mm:ss ZZ"
+        date_format: "YYYY-MM-DD"
+        time_format: "HH:mm"
+        picker_utc: false
+
+      - label: "投稿者 / Author"
+        name: "author"
+        widget: "relation"
+        collection: "members"
+        value_field: "{{slug}}"
+        search_fields: ["name"]
+        display_fields: ["name"]
+        required: false
+        hint: "メンバー一覧から選ぶと顔写真付きで表示されます。"
+
+      - label: "タグ / Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+        hint: "例: Conference, CISP, P23k"
+
+      - label: "見出し画像 / Banner image"
+        name: "image"
+        widget: "image"
+        required: false
+        hint: "任意。記事一覧のサムネイルと記事上部の背景になります。"
+
+      - label: "本文 / Body"
+        name: "body"
+        widget: "markdown"
+
+  # -----------------------------------------------------------
+  # 2. LAB MEMBERS  ->  _members/*.md
+  # -----------------------------------------------------------
   - name: "members"
-    label: "Lab Members"
+    label: "メンバー / Lab Members"
+    label_singular: "メンバー / Member"
     folder: "_members"
     create: true
+    slug: "{{fields.username}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+    identifier_field: "name"
+    media_folder: "/images"
+    public_folder: "images"
+    view_groups:
+      - label: "区分 / Role"
+        field: "role"
     fields:
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Role", name: "role", widget: "select", options: ["principal-investigator", "postdoc", "phd", "master", "undergrad"]}
-      - {label: "Portrait Image", name: "image", widget: "image", required: false}
-      - {label: "Biography", name: "body", widget: "markdown"}
+      - label: "氏名 / Name"
+        name: "name"
+        widget: "string"
+        hint: "例: 木藤 新一郎 / Shin-ichiro Kidou"
 
-  - name: "publications"
-    label: "Publications & DOIs"
-    files:
-      - label: "DOI List"
-        name: "sources"
-        file: "_data/sources.yaml"
+      - label: "ファイル名 / Username"
+        name: "username"
+        widget: "string"
+        hint: "半角小文字・スペースなし（例: kidou）。ページURLと、記事の投稿者欄で使われます。"
+
+      - label: "区分 / Role"
+        name: "role"
+        widget: "select"
+        options:
+          - { label: "教授 / Principal Investigator", value: "principal-investigator" }
+          - { label: "研究員 / Postdoctoral Researcher", value: "postdoc" }
+          - { label: "研究員 / Research Staff", value: "research-staff" }
+          - { label: "博士後期課程 / PhD Student", value: "phd" }
+          - { label: "博士前期課程 / Master Student", value: "master" }
+          - { label: "学部生 / Undergraduate Student", value: "undergrad" }
+
+      - label: "顔写真 / Portrait"
+        name: "image"
+        widget: "image"
+        required: false
+
+      - label: "肩書き（任意）/ Custom description"
+        name: "description"
+        widget: "string"
+        required: false
+        hint: "空欄なら区分から自動で入ります。"
+
+      - label: "所属（任意）/ Affiliation"
+        name: "affiliation"
+        widget: "string"
+        required: false
+
+      - label: "リンク / Links"
+        name: "links"
+        widget: "object"
+        required: false
+        collapsed: true
         fields:
-          - label: "Citations"
-            name: "citations"
+          - { label: "Email", name: "email", widget: "string", required: false }
+          - { label: "ORCID iD", name: "orcid", widget: "string", required: false, hint: "0000-0001-8829-7950 の形式" }
+          - { label: "Google Scholar ID", name: "google-scholar", widget: "string", required: false }
+          - { label: "ResearchGate", name: "researchgate", widget: "string", required: false }
+          - { label: "researchmap", name: "researchmap", widget: "string", required: false }
+          - { label: "Website URL", name: "website", widget: "string", required: false }
+          - { label: "GitHub", name: "github", widget: "string", required: false }
+
+      - label: "紹介文 / Biography"
+        name: "body"
+        widget: "markdown"
+        required: false
+
+  # -----------------------------------------------------------
+  # 3. PUBLICATIONS  ->  _data/sources-cms.yaml
+  #    Requires the small _cite/util.py patch (see notes).
+  # -----------------------------------------------------------
+  - name: "publications"
+    label: "業績 / Publications"
+    editor:
+      preview: false
+    files:
+      - label: "DOI リスト / DOI list"
+        name: "sources"
+        file: "_data/sources-cms.yaml"
+        fields:
+          - label: "論文 / Papers"
+            name: "sources"
             widget: "list"
+            summary: "{{fields.id}}"
             fields:
-              - {label: "DOI (must start with doi:)", name: "id", widget: "string"}
-              - {label: "Representative Figure", name: "image", widget: "image", required: false}
+              - label: "DOI"
+                name: "id"
+                widget: "string"
+                hint: "10. で始まる番号のみ（例: 10.1002/pld3.70179）"
+              - label: "種別 / Type"
+                name: "type"
+                widget: "select"
+                required: false
+                options: ["paper", "preprint", "book", "article", "journal"]
+              - label: "図 / Representative figure"
+                name: "image"
+                widget: "image"
+                required: false
+
+  # -----------------------------------------------------------
+  # 4. SITE PAGES  ->  index.md, research/, team/, contact/, ...
+  #    Body is a plain textarea on purpose: these pages contain
+  #    raw HTML and Liquid tags that a rich-text editor would break.
+  # -----------------------------------------------------------
+  - name: "pages"
+    label: "固定ページ / Site Pages"
+    editor:
+      preview: false
+    files:
+      - label: "ホーム / Home"
+        name: "home"
+        file: "index.md"
+        fields:
+          - label: "本文 / Body (HTML + Markdown)"
+            name: "body"
+            widget: "text"
+
+      - label: "研究内容 / Research"
+        name: "research"
+        file: "research/index.md"
+        fields:
+          - { label: "ページ名 / Page title", name: "title", widget: "string" }
+          - label: "ナビ設定 / Navigation"
+            name: "nav"
+            widget: "object"
+            fields:
+              - { label: "並び順 / Order", name: "order", widget: "number", value_type: "int" }
+              - { label: "説明 / Tooltip", name: "tooltip", widget: "string", required: false }
+          - { label: "本文 / Body (HTML + Markdown)", name: "body", widget: "text" }
+
+      - label: "メンバー紹介ページ / Team page"
+        name: "team"
+        file: "team/index.md"
+        fields:
+          - { label: "ページ名 / Page title", name: "title", widget: "string" }
+          - label: "ナビ設定 / Navigation"
+            name: "nav"
+            widget: "object"
+            fields:
+              - { label: "並び順 / Order", name: "order", widget: "number", value_type: "int" }
+              - { label: "説明 / Tooltip", name: "tooltip", widget: "string", required: false }
+          - { label: "本文 / Body (HTML + Markdown)", name: "body", widget: "text" }
+
+      - label: "業績ページ / Publications page"
+        name: "projects"
+        file: "projects/index.md"
+        fields:
+          - { label: "ページ名 / Page title", name: "title", widget: "string" }
+          - label: "ナビ設定 / Navigation"
+            name: "nav"
+            widget: "object"
+            fields:
+              - { label: "並び順 / Order", name: "order", widget: "number", value_type: "int" }
+              - { label: "説明 / Tooltip", name: "tooltip", widget: "string", required: false }
+          - { label: "本文 / Body (HTML + Markdown)", name: "body", widget: "text" }
+
+      - label: "お知らせ一覧ページ / News page"
+        name: "blog"
+        file: "blog/index.md"
+        fields:
+          - { label: "ページ名 / Page title", name: "title", widget: "string" }
+          - label: "ナビ設定 / Navigation"
+            name: "nav"
+            widget: "object"
+            fields:
+              - { label: "並び順 / Order", name: "order", widget: "number", value_type: "int" }
+              - { label: "説明 / Tooltip", name: "tooltip", widget: "string", required: false }
+          - { label: "本文 / Body (HTML + Markdown)", name: "body", widget: "text" }
+
+      - label: "アクセス / Contact"
+        name: "contact"
+        file: "contact/index.md"
+        fields:
+          - { label: "ページ名 / Page title", name: "title", widget: "string" }
+          - label: "ナビ設定 / Navigation"
+            name: "nav"
+            widget: "object"
+            fields:
+              - { label: "並び順 / Order", name: "order", widget: "number", value_type: "int" }
+              - { label: "説明 / Tooltip", name: "tooltip", widget: "string", required: false }
+          - { label: "本文 / Body (HTML + Markdown)", name: "body", widget: "text" }

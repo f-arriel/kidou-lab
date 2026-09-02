@@ -1,5 +1,6 @@
 ---
 name: 木藤 新一郎 / Shin-ichiro Kidou
+username: kidou
 image: images/SKidou.jpg
 role: principal-investigator
 links:

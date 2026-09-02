@@ -4,8 +4,7 @@
 # =============================================================
 
 backend:
-  name: github
-  repo: f-arriel/kidou-lab
+  name: git-gateway
   branch: main
 
 # Show the admin UI in Japanese

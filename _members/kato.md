@@ -1,5 +1,6 @@
 ---
 name: 加藤 優光 / Yumi Kato
+username: kato
 image: images/YKato.jpg
 role: master
 ---

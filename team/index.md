@@ -28,7 +28,7 @@ nav:
 
 ## 研究員 / Research Staff
 
-{% include list.html data="members" component="portrait" filter="role =~ /Research Staff/i" %}
+{% include list.html data="members" component="portrait" filter="role =~ /research-staff/i" %}
 
 
 {% include section.html %}

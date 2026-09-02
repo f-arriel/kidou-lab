@@ -3,7 +3,7 @@ name: Haque Md. Maksudul
 username: haque
 role: phd
 image: images/Haque.jpg
-description: 博士後期課程3年
+description: 博士3年
 affiliation: 理学研究科
 links:
   email: ''

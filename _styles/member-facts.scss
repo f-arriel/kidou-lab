@@ -1,59 +1,48 @@
 ---
-layout: default
 ---
 
-{% capture floatcontent %}
+// details block at the top of a member page
+// see _layouts/member.html
 
-{% include portrait.html lookup=page.slug %}
+.member-facts {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0 0 24px 0;
+  padding: 0;
+  text-align: left;
+}
 
-<!-- Display social and academic links -->
-<div class="member-links" style="margin-top: 15px;">
-  {% for link in page.links %}
-    {% assign key = link[0] %}
-    {% assign value = link[1] %}
-    {% if value and value != "" %}
-      {% include button.html type=key link=value style="bare" %}<br>
-    {% endif %}
-  {% endfor %}
-</div>
+.member-fact {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--light-gray);
+}
 
-{% endcapture %}
+.member-fact:first-child {
+  border-top: 1px solid var(--light-gray);
+}
 
-{% include float.html content=floatcontent %}
+.member-facts dt {
+  margin: 0;
+  color: var(--gray);
+  font-family: var(--heading);
+  font-size: 0.8rem;
+  font-weight: var(--regular);
+  letter-spacing: 0.02em;
+}
 
-<!-- Member biography and main content -->
-<div class="member-content">
-  {% assign type = site.data.types[page.role] %}
+.member-facts dd {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.95rem;
+}
 
-  <dl class="member-facts">
-    {% if type %}
-      <div class="member-fact">
-        <dt>区分 / Position</dt>
-        <dd>{{ type.description }}</dd>
-      </div>
-    {% endif %}
-
-    {% if page.description %}
-      <div class="member-fact">
-        <dt>学年・肩書き / Title</dt>
-        <dd>{{ page.description }}</dd>
-      </div>
-    {% endif %}
-
-    {% if page.affiliation %}
-      <div class="member-fact">
-        <dt>所属 / Affiliation</dt>
-        <dd>{{ page.affiliation }}</dd>
-      </div>
-    {% endif %}
-
-    {% if page.graduation_year %}
-      <div class="member-fact">
-        <dt>卒業年 / Year left</dt>
-        <dd>{{ page.graduation_year }}</dd>
-      </div>
-    {% endif %}
-  </dl>
-
-  {{ content }}
-</div>
+@media (max-width: 700px) {
+  .member-fact {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}

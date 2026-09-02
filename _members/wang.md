@@ -1,5 +1,5 @@
 ---
-name: Wang Mian
+name: Wang Mian / Wang Mian
 username: wang
 role: alumni
 graduation_year: 2024

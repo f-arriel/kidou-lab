@@ -1,0 +1,47 @@
+name: deploy-server
+run-name: Deploy to university server
+
+# Start with manual runs only. Once a manual run succeeds,
+# uncomment the "push" block below to deploy on every commit.
+on:
+  workflow_dispatch:
+  # push:
+  #   branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Install Ruby packages
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: true
+
+      - name: Set root URL
+        run: |
+          printf "\n\nurl: https://www.nsc.nagoya-cu.ac.jp" >> _config.yaml
+
+      - name: Build site for the university server
+        run: |
+          JEKYLL_ENV=production bundle exec jekyll build --baseurl "/~kidou"
+
+      - name: Upload over SFTP
+        env:
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          SFTP_USER: ${{ secrets.SFTP_USER }}
+          SFTP_PASS: ${{ secrets.SFTP_PASS }}
+          SFTP_PATH: ${{ secrets.SFTP_PATH }}
+        run: |
+          sudo apt-get update && sudo apt-get install -y lftp
+          lftp -c "
+            set sftp:auto-confirm yes;
+            set net:max-retries 2;
+            set net:timeout 20;
+            open -u \"$SFTP_USER\",\"$SFTP_PASS\" sftp://$SFTP_HOST;
+            mirror -R --verbose _site/ \"$SFTP_PATH\"
+          "

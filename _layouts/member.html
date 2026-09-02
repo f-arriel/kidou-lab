@@ -2,58 +2,74 @@
 layout: default
 ---
 
-{% capture floatcontent %}
+{% assign type = site.data.types[page.role] %}
+{% assign name_parts = page.name | split: " / " %}
 
-{% include portrait.html lookup=page.slug %}
+<div class="member-page" data-no-page-nav>
 
-<!-- Display social and academic links -->
-<div class="member-links" style="margin-top: 15px;">
-  {% for link in page.links %}
-    {% assign key = link[0] %}
-    {% assign value = link[1] %}
-    {% if value and value != "" %}
-      {% include button.html type=key link=value style="bare" %}<br>
-    {% endif %}
-  {% endfor %}
-</div>
+  <aside class="member-side">
+    <img
+      src="{{ page.image | relative_url | uri_escape }}"
+      class="member-photo"
+      alt="{{ page.name | regex_strip }}"
+      loading="lazy"
+      {% include fallback.html %}
+    >
 
-{% endcapture %}
+    <div class="member-links">
+      {% for link in page.links %}
+        {% assign key = link[0] %}
+        {% assign value = link[1] %}
+        {% if value and value != "" %}
+          {% include button.html type=key link=value style="bare" %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </aside>
 
-{% include float.html content=floatcontent %}
+  <div class="member-main">
 
-<!-- Member biography and main content -->
-<div class="member-content">
-  {% assign type = site.data.types[page.role] %}
+    <nav class="member-crumbs" aria-label="breadcrumb">
+      <a href="{{ "/team/" | relative_url }}">メンバー / Team</a>
+      <span>/</span>
+      <span>{{ name_parts[0] }}</span>
+    </nav>
 
-  <dl class="member-facts">
+    <h1 class="member-name">
+      {{ name_parts[0] }}
+      {% if name_parts[1] %}
+        <span class="member-name-en">{{ name_parts[1] }}</span>
+      {% endif %}
+    </h1>
+
     {% if type %}
-      <div class="member-fact">
-        <dt>区分 / Position</dt>
-        <dd>{{ type.description }}</dd>
-      </div>
+      <p class="member-role">{{ type.description }}</p>
     {% endif %}
 
-    {% if page.description %}
-      <div class="member-fact">
-        <dt>学年・肩書き / Title</dt>
-        <dd>{{ page.description }}</dd>
-      </div>
+    {% if page.description or page.affiliation or page.graduation_year %}
+      <section class="member-block">
+        <h2>所属 / Affiliations</h2>
+        <ul>
+          {% if page.description %}
+            <li>{{ page.description }}</li>
+          {% endif %}
+          {% if page.affiliation %}
+            <li>{{ page.affiliation }}</li>
+          {% endif %}
+          {% if page.graduation_year %}
+            <li>{{ page.graduation_year }}年 卒業 / Left in {{ page.graduation_year }}</li>
+          {% endif %}
+        </ul>
+      </section>
     {% endif %}
 
-    {% if page.affiliation %}
-      <div class="member-fact">
-        <dt>所属 / Affiliation</dt>
-        <dd>{{ page.affiliation }}</dd>
-      </div>
+    {% assign bio = content | strip %}
+    {% if bio != "" %}
+      <section class="member-block">
+        <h2>紹介 / Biography</h2>
+        {{ content }}
+      </section>
     {% endif %}
 
-    {% if page.graduation_year %}
-      <div class="member-fact">
-        <dt>卒業年 / Year left</dt>
-        <dd>{{ page.graduation_year }}</dd>
-      </div>
-    {% endif %}
-  </dl>
-
-  {{ content }}
+  </div>
 </div>

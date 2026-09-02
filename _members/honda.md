@@ -1,5 +1,5 @@
 ---
-name: 本田祐奈
+name: 本田祐奈 / Yuna Honda
 username: honda
 role: undergrad
 image: ''

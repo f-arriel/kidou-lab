@@ -2,7 +2,8 @@
 name: 渡邉 栞夕 / Shuu Watanabe
 username: watanabe
 role: master
-image: images/SWatanabe.jpg
+graduation_year: null
+image: /images/IMG_0970.jpeg
 description: 博士前期課程2年
 affiliation: 理学研究科
 links: null

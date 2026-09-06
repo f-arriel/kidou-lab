@@ -1,5 +1,8 @@
 {% comment %}
   renders every entry in _outreach as a compact dated list.
+  each item is searchable/filterable by search.js:
+    - the category renders as a .tag  ->  ?search="tag: 出前授業"
+    - data-search carries a year token ->  ?search=year-2019
   usage:  {% include outreach-list.html %}
   optional:  {% include outreach-list.html limit=5 %}
 {% endcomment %}
@@ -9,11 +12,15 @@
   {% assign activities = activities | slice: 0, include.limit %}
 {% endif %}
 
+{% assign link = include.link | default: page.dir %}
+
 <div class="outreach">
   {% for item in activities %}
-    <article class="outreach-item">
+    {% assign item_year = item.date | date: "%Y" %}
+
+    <article class="outreach-item" data-search="year-{{ item_year }}">
       <div class="outreach-date">
-        <span class="outreach-year">{{ item.date | date: "%Y" }}</span>
+        <span class="outreach-year">{{ item_year }}</span>
         <span class="outreach-day">{{ item.date | date: "%-m.%-d" }}</span>
       </div>
 
@@ -22,7 +29,11 @@
 
         <div class="outreach-meta">
           {% if item.category %}
-            <span class="outreach-tag">{{ item.category }}</span>
+            <a
+              class="tag outreach-tag"
+              href="{{ link | relative_url }}?search=&quot;tag: {{ item.category }}&quot;"
+              data-tooltip="Show items with the tag &quot;{{ item.category }}&quot;"
+            >{{ item.category }}</a>
           {% endif %}
           {% if item.venue %}
             <span class="outreach-venue">{{ item.venue }}</span>
@@ -37,12 +48,12 @@
           <div class="outreach-text">{{ text | markdownify }}</div>
         {% endif %}
 
-        {% if item.link %}
+        {% if item.link and item.link != "" %}
           <a class="outreach-link" href="{{ item.link }}">詳細 / More information</a>
         {% endif %}
       </div>
 
-      {% if item.image %}
+      {% if item.image and item.image != "" %}
         <a class="outreach-thumb" href="{{ item.image | relative_url | uri_escape }}">
           <img
             src="{{ item.image | relative_url | uri_escape }}"

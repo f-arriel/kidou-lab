@@ -5,7 +5,7 @@
 $logo-big: 80px;
 $logo: 40px;
 $big-padding: 100px;
-$collapse: 700px;
+$collapse: 900px;
 $sticky: true;
 
 header {
@@ -75,12 +75,18 @@ header a {
 .nav-toggle {
   display: none;
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin: 0;
+  border-radius: var(--rounded);
   color: var(--text);
   appearance: none;
+  cursor: pointer;
   transition: background var(--transition);
+}
+
+.nav-toggle:hover {
+  background: var(--overlay);
 }
 
 .nav-toggle:after {
@@ -89,7 +95,7 @@ header a {
   left: 50%;
   top: 50%;
   color: var(--text);
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   transform: translate(-50%, -50%);
@@ -106,7 +112,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 4px 16px;
+  gap: 4px 14px;
   font-family: var(--heading);
   text-transform: uppercase;
 }
@@ -117,12 +123,27 @@ nav > a {
   flex-direction: column;
   align-items: center;
   gap: 1px;
-  padding: 6px 4px;
+  padding: 6px 8px;
+  border-radius: var(--rounded);
   line-height: 1.2;
+  transition:
+    color var(--transition),
+    background var(--transition);
 }
 
 nav > a:hover {
   color: var(--primary);
+}
+
+// current page
+
+nav > a[data-active] {
+  color: var(--primary);
+  font-weight: var(--bold);
+}
+
+nav > a[data-active] .nav-en {
+  opacity: 1;
 }
 
 .nav-ja {
@@ -137,33 +158,55 @@ nav > a:hover {
   white-space: nowrap;
 }
 
-// narrow screens: collapse nav behind the hamburger,
-// and put the two languages back on one line to save height
+// narrow screens: collapse nav behind the hamburger on EVERY page,
+// including the home page, and lay the links out as a tap-friendly panel
 
-header:not([data-big]) {
-  @media (max-width: $collapse) {
-    justify-content: flex-end;
+@media (max-width: $collapse) {
+  header {
+    gap: 12px;
+    padding: 14px 16px;
+  }
 
-    .nav-toggle {
-      display: flex;
-    }
+  .nav-toggle {
+    display: flex;
+    order: 2;
+  }
 
-    .nav-toggle:not(:checked) + nav {
-      display: none;
-    }
+  .nav-toggle:not(:checked) + nav {
+    display: none;
+  }
 
-    nav {
-      align-items: flex-end;
-      flex-direction: column;
-      width: 100%;
-      gap: 2px;
-    }
+  nav {
+    order: 3;
+    align-items: stretch;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    padding-top: 8px;
+    border-top: 1px solid var(--overlay);
+    text-align: left;
+  }
 
-    nav > a {
-      flex-direction: row;
-      align-items: baseline;
-      gap: 6px;
-    }
+  nav > a {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 12px 8px;
+    border-radius: 0;
+  }
+
+  nav > a + a {
+    border-top: 1px solid var(--overlay);
+  }
+
+  nav > a[data-active] {
+    background: var(--overlay);
+  }
+
+  .home {
+    order: 1;
+    flex-basis: auto;
   }
 }
 
@@ -201,5 +244,14 @@ header[data-big] {
 
   .subtitle {
     font-size: var(--large);
+  }
+
+  @media (max-width: $collapse) {
+    flex-direction: column;
+    padding: 40px 16px 20px 16px;
+
+    .nav-toggle {
+      align-self: flex-end;
+    }
   }
 }

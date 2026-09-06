@@ -1,11 +1,9 @@
 ---
 ---
 
-<div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
-  <h1 style="margin-bottom: 5px; font-size: 2.5em;">木藤研 - Kidou Lab</h1>
-  <p style="text-align: center; font-size: 1.25em; color: var(--primary); font-weight: 500; margin-top: 0;">
-    植物生命科学 - Plant Physiology and Molecular Biology
-  </p>
+<div class="home-hero">
+  <h1 class="home-hero-title">木藤研 - Kidou Lab</h1>
+  <p class="home-hero-subtitle">植物生命科学 - Plant Physiology and Molecular Biology</p>
 </div>
 
 {% include section.html %}
@@ -21,92 +19,95 @@ Join us in unraveling the beautiful mysteries of life phenomena through the func
 Barley is not only used as a main ingredient in beer and whiskey, but is also enjoyed in Japan as barley tea and barley rice. Additionally, because it is rich in the dietary fiber β-glucan, it is attracting attention as a health food. Barley is also highly tolerant to environmental stresses, particularly cold temperatures, allowing it to be cultivated in cold regions like Northern Europe where wheat cannot thrive. In our laboratory, we are working to unravel the molecular mechanisms behind barley's cold tolerance and β-glucan synthesis. We are also conducting research on floral bud formation using the model plant *Arabidopsis thaliana*. Although we are a small laboratory, we are working to elucidate the physiological mechanisms of plants at the molecular level. If you have an interest in plants, we warmly invite you to join our team!
 
 <br>
-<img src="{{ '/images/Home.jpg' | relative_url }}" alt="Kidou Laboratory" style="display: block; margin: 0 auto; width: 100%; max-width: 900px; border-radius: 8px;">
+<img src="{{ '/images/Home.jpg' | relative_url }}" alt="Kidou Laboratory" class="home-photo">
 
 {% include section.html %}
 
-<!-- MODERN, SCROLLABLE NEWS SECTION START -->
-<div style="
-  max-width: 900px;
-  margin: 0 auto 40px auto;
-  border-radius: 8px;
-  background-color: var(--background);
-  border: 1px solid var(--light-gray);
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-  overflow: hidden;
-">
-  <!-- News Header (Centered) -->
-  <div style="
-    padding: 15px 20px;
-    background-color: var(--background-alt);
-    border-bottom: 1px solid var(--light-gray);
-    text-align: center;
-  ">
-    <h3 style="margin: 0; font-size: 1.4em;">
-      {% include icon.html icon='fa-solid fa-satellite-dish' %}
-      研究室ニュース / Lab News
-    </h3>
-  </div>
+<div class="home-blocks">
 
-  <!-- Scrollable Feed Container (Fixed Height) -->
-  <div style="
-    height: 300px; /* Adjust height here as needed */
-    overflow-y: auto; /* Enables inner vertical scroll */
-    padding: 10px 20px;
-    scrollbar-width: thin; /* Clean modern scrollbar for Firefox */
-    scrollbar-color: var(--gray) var(--background-alt); /* Colors for scrollbar */
-  ">
-    <!-- Jekyll Post Loop: Fetches most recent 10 posts -->
-    {% assign recent_posts = site.posts | limit: 10 %}
-    {% if recent_posts.size > 0 %}
-      <ul style="list-style-type: none; padding: 0; margin: 0;">
-        {% for post in recent_posts %}
-          <li style="
-            border-bottom: 1px solid var(--light-gray);
-            padding: 15px 5px;
-            display: flex;
-            align-items: flex-start;
-          ">
-            <!-- Modern Date Badge (Left Side) -->
-            <div style="
-              text-align: center;
-              margin-right: 20px;
-              flex-shrink: 0;
-              width: 90px;
-              font-family: var(--code);
-            ">
-              <span style="font-size: 0.9em; font-weight: 600;">{{ post.date | date: "%Y年" }}</span><br>
-              <span style="color: var(--primary); font-size: 1.1em; font-weight: 600; line-height: 1;">{{ post.date | date: "%m/%d" }}</span>
-            </div>
+  <!-- ============ latest news ============ -->
+  <section class="home-block">
+    <div class="home-block-head">
+      <h3>
+        {% include icon.html icon="fa-solid fa-satellite-dish" %}
+        研究室ニュース / Lab News
+      </h3>
+    </div>
 
-            <!-- Post Title (Clickable) -->
-            <div style="flex-grow: 1; padding-top: 2px;">
-              <a href="{{ post.url | relative_url }}" style="font-weight: 500; font-size: 1.1em; text-decoration: none; color: inherit;">
+    <div class="home-block-body home-news-scroll">
+      {% assign recent_posts = site.posts | limit: 10 %}
+      {% if recent_posts.size > 0 %}
+        <ul class="home-news">
+          {% for post in recent_posts %}
+            <li class="home-news-item">
+              <span class="home-news-date">
+                <span class="home-news-year">{{ post.date | date: "%Y年" }}</span>
+                <span class="home-news-day">{{ post.date | date: "%m/%d" }}</span>
+              </span>
+              <a class="home-news-title" href="{{ post.url | relative_url }}">
                 {{ post.title }}
               </a>
-            </div>
-          </li>
-        {% endfor %}
-      </ul>
-    {% else %}
-      <!-- Fallback message if no posts exist -->
-      <div style="text-align: center; padding: 40px; color: var(--gray);">
-        現在、新しいニュースはありません。<br>
-        *There are currently no new announcements.*
-      </div>
-    {% endif %}
-  </div>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p class="home-empty">
+          現在、新しいニュースはありません。<br>
+          <em>There are currently no new announcements.</em>
+        </p>
+      {% endif %}
+    </div>
 
-  <!-- Bottom Link to full Blog page -->
-  <div style="
-    padding: 10px;
-    text-align: center;
-    border-top: 1px solid var(--light-gray);
-    background-color: var(--background-alt);
-  ">
-    <a href="{{ '/blog/' | relative_url }}" style="font-size: 0.9em;">
-      すべての投稿を見る / See all posts {% include icon.html icon='fa-solid fa-angles-right' %}
-    </a>
-  </div>
+    <div class="home-block-foot">
+      <a href="{{ '/blog/' | relative_url }}">
+        すべての投稿を見る / See all posts
+        {% include icon.html icon="fa-solid fa-angles-right" %}
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ featured publications ============ -->
+  {% assign dated_pubs = site.data.citations
+    | where_exp: "c", "c.date"
+    | sort: "date"
+    | reverse
+  %}
+  {% if dated_pubs.size > 0 %}
+    <section class="home-block">
+      <div class="home-block-head">
+        <h3>
+          {% include icon.html icon="fa-solid fa-file-signature" %}
+          最新の論文 / Recent Publications
+        </h3>
+      </div>
+
+      <div class="home-block-body">
+        <ul class="home-pubs">
+          {% for pub in dated_pubs limit: 4 %}
+            <li class="home-pub-item">
+              <span class="home-pub-date">{{ pub.date | date: "%Y" }}</span>
+              <span class="home-pub-main">
+                <a
+                  class="home-pub-title"
+                  {% if pub.link %}href="{{ pub.link }}"{% endif %}
+                >{{ pub.title }}</a>
+                <span class="home-pub-meta">
+                  {{ pub.authors | array_carve: 2 | join: ", " }}
+                  {% if pub.publisher %}·&nbsp;<em>{{ pub.publisher }}</em>{% endif %}
+                </span>
+              </span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="home-block-foot">
+        <a href="{{ '/projects/' | relative_url }}">
+          業績一覧を見る / See all publications
+          {% include icon.html icon="fa-solid fa-angles-right" %}
+        </a>
+      </div>
+    </section>
+  {% endif %}
+
 </div>
-<!-- MODERN, SCROLLABLE NEWS SECTION END -->

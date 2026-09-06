@@ -1,5 +1,5 @@
 ---
-title: 業績・社会貢献 / Publications & Outreach
+title: 業績 / Publications
 nav:
   order: 3
   tooltip: 
@@ -19,10 +19,3 @@ nav:
 {% include search-info.html %}
 
 {% include list.html data="citations" component="citation" %}
-
-
-{% include section.html %}
-
-# {% include icon.html icon="fa-solid fa-hands-holding-child" %} 社会貢献 / Social Contribution
-
-{% include outreach-list.html %}

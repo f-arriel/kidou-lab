@@ -6,6 +6,9 @@
 {% assign jpg = "images/logo.jpg" | file_exists %}
 {% assign logo = svg | default: png | default: jpg | default: nil %}
 
+{% comment %} saved before the loop below, which shadows the `page` variable {% endcomment %}
+{% assign current_url = page.url %}
+
 <header
   class="background"
   style="--image: url('{{ image | relative_url | uri_escape }}')"
@@ -38,24 +41,37 @@
     {% endif %}
   </a>
 
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
+  <input
+    id="nav-toggle"
+    class="nav-toggle"
+    type="checkbox"
+    aria-label="show/hide nav"
+  >
 
   <nav>
-    {% assign pages = site.pages
-      | where_exp: "page", "page.nav"
+    {% assign nav_pages = site.pages
+      | where_exp: "p", "p.nav"
       | sort: "nav.order"
     %}
-    {% for page in pages %}
-      {% if page.nav %}
-        {% assign parts = page.title | split: " / " %}
-        <a
-          href="{{ page.dir | relative_url | uri_escape }}"
-          data-tooltip="{{ page.nav.tooltip | xml_escape }}"
-        >
-          <span class="nav-ja">{{ parts[0] }}</span>
-          {% if parts[1] %}<span class="nav-en">{{ parts[1] }}</span>{% endif %}
-        </a>
+    {% for nav_page in nav_pages %}
+      {% assign parts = nav_page.title | split: " / " %}
+
+      {% assign is_active = false %}
+      {% if nav_page.dir != "/" and current_url contains nav_page.dir %}
+        {% assign is_active = true %}
       {% endif %}
+
+      <a
+        href="{{ nav_page.dir | relative_url | uri_escape }}"
+        data-tooltip="{{ nav_page.nav.tooltip | xml_escape }}"
+        {% if is_active %}
+          data-active
+          aria-current="page"
+        {% endif %}
+      >
+        <span class="nav-ja">{{ parts[0] }}</span>
+        {% if parts[1] %}<span class="nav-en">{{ parts[1] }}</span>{% endif %}
+      </a>
     {% endfor %}
   </nav>
 </header>

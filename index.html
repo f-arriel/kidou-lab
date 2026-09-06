@@ -213,6 +213,10 @@
   
 
   
+    <link href="/kidou-lab/_styles/home.css" rel="stylesheet">
+  
+
+  
     <link href="/kidou-lab/_styles/icon.css" rel="stylesheet">
   
 
@@ -360,6 +364,8 @@
 
   
 
+  
+
 
 <!-- include all css in styles folder -->
 
@@ -401,6 +407,9 @@
 
 
 
+
+
+
 <header class="background" style="--image: url('/kidou-lab/images/background.jpg')" data-dark="true" data-big>
   <a href="/kidou-lab/" class="home">
     
@@ -418,58 +427,70 @@
     
   </a>
 
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
+  <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
   <nav>
     
     
       
-        
-        <a href="/kidou-lab/research/" data-tooltip="">
-          <span class="nav-ja">研究内容</span>
-          <span class="nav-en">Research</span>
-        </a>
+
       
+      
+
+      <a href="/kidou-lab/research/" data-tooltip="">
+        <span class="nav-ja">研究内容</span>
+        <span class="nav-en">Research</span>
+      </a>
     
       
-        
-        <a href="/kidou-lab/team/" data-tooltip="">
-          <span class="nav-ja">メンバー</span>
-          <span class="nav-en">People</span>
-        </a>
+
       
+      
+
+      <a href="/kidou-lab/team/" data-tooltip="">
+        <span class="nav-ja">メンバー</span>
+        <span class="nav-en">People</span>
+      </a>
     
       
-        
-        <a href="/kidou-lab/projects/" data-tooltip="">
-          <span class="nav-ja">業績</span>
-          <span class="nav-en">Publications</span>
-        </a>
+
       
+      
+
+      <a href="/kidou-lab/projects/" data-tooltip="">
+        <span class="nav-ja">業績</span>
+        <span class="nav-en">Publications</span>
+      </a>
     
       
-        
-        <a href="/kidou-lab/outreach/" data-tooltip="">
-          <span class="nav-ja">社会貢献</span>
-          <span class="nav-en">Outreach</span>
-        </a>
+
       
+      
+
+      <a href="/kidou-lab/outreach/" data-tooltip="">
+        <span class="nav-ja">社会貢献</span>
+        <span class="nav-en">Outreach</span>
+      </a>
     
       
-        
-        <a href="/kidou-lab/blog/" data-tooltip="">
-          <span class="nav-ja">お知らせ</span>
-          <span class="nav-en">News</span>
-        </a>
+
       
+      
+
+      <a href="/kidou-lab/blog/" data-tooltip="">
+        <span class="nav-ja">お知らせ</span>
+        <span class="nav-en">News</span>
+      </a>
     
       
-        
-        <a href="/kidou-lab/contact/" data-tooltip="">
-          <span class="nav-ja">アクセス</span>
-          <span class="nav-en">Contact</span>
-        </a>
+
       
+      
+
+      <a href="/kidou-lab/contact/" data-tooltip="">
+        <span class="nav-ja">アクセス</span>
+        <span class="nav-en">Contact</span>
+      </a>
     
   </nav>
 </header>
@@ -492,11 +513,9 @@
   
 
   <section class="background" data-size="page">
-    <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
-  <h1 style="margin-bottom: 5px; font-size: 2.5em;">木藤研 - Kidou Lab</h1>
-  <p style="text-align: center; font-size: 1.25em; color: var(--primary); font-weight: 500; margin-top: 0;">
-    植物生命科学 - Plant Physiology and Molecular Biology
-  </p>
+    <div class="home-hero">
+  <h1 class="home-hero-title">木藤研 - Kidou Lab</h1>
+  <p class="home-hero-subtitle">植物生命科学 - Plant Physiology and Molecular Biology</p>
 </div>
   </section>
 
@@ -522,7 +541,7 @@ Join us in unraveling the beautiful mysteries of life phenomena through the func
 Barley is not only used as a main ingredient in beer and whiskey, but is also enjoyed in Japan as barley tea and barley rice. Additionally, because it is rich in the dietary fiber β-glucan, it is attracting attention as a health food. Barley is also highly tolerant to environmental stresses, particularly cold temperatures, allowing it to be cultivated in cold regions like Northern Europe where wheat cannot thrive. In our laboratory, we are working to unravel the molecular mechanisms behind barley’s cold tolerance and β-glucan synthesis. We are also conducting research on floral bud formation using the model plant <em>Arabidopsis thaliana</em>. Although we are a small laboratory, we are working to elucidate the physiological mechanisms of plants at the molecular level. If you have an interest in plants, we warmly invite you to join our team!</p>
 
 <p><br>
-<img src="/kidou-lab/images/Home.jpg" alt="Kidou Laboratory" style="display: block; margin: 0 auto; width: 100%; max-width: 900px; border-radius: 8px;"></p>
+<img src="/kidou-lab/images/Home.jpg" alt="Kidou Laboratory" class="home-photo"></p>
   </section>
 
   
@@ -536,189 +555,155 @@ Barley is not only used as a main ingredient in beer and whiskey, but is also en
   <size></size>
 -->
 
-<!-- MODERN, SCROLLABLE NEWS SECTION START -->
-<div style="
-  max-width: 900px;
-  margin: 0 auto 40px auto;
-  border-radius: 8px;
-  background-color: var(--background);
-  border: 1px solid var(--light-gray);
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-  overflow: hidden;
-">
-  <!-- News Header (Centered) -->
-  <div style="
-    padding: 15px 20px;
-    background-color: var(--background-alt);
-    border-bottom: 1px solid var(--light-gray);
-    text-align: center;
-  ">
-    <h3 style="margin: 0; font-size: 1.4em;">
-      <i class="icon fa-solid fa-satellite-dish"></i>
-      研究室ニュース / Lab News
-    </h3>
-  </div>
+<div class="home-blocks">
 
-  <!-- Scrollable Feed Container (Fixed Height) -->
-  <div style="
-    height: 300px; /* Adjust height here as needed */
-    overflow-y: auto; /* Enables inner vertical scroll */
-    padding: 10px 20px;
-    scrollbar-width: thin; /* Clean modern scrollbar for Firefox */
-    scrollbar-color: var(--gray) var(--background-alt); /* Colors for scrollbar */
-  ">
-    <!-- Jekyll Post Loop: Fetches most recent 10 posts -->
-    
-    
-      <ul style="list-style-type: none; padding: 0; margin: 0;">
-        
-          <li style="
-            border-bottom: 1px solid var(--light-gray);
-            padding: 15px 5px;
-            display: flex;
-            align-items: flex-start;
-          ">
-            <!-- Modern Date Badge (Left Side) -->
-            <div style="
-              text-align: center;
-              margin-right: 20px;
-              flex-shrink: 0;
-              width: 90px;
-              font-family: var(--code);
-            ">
-              <span style="font-size: 0.9em; font-weight: 600;">2026年</span><br>
-              <span style="color: var(--primary); font-size: 1.1em; font-weight: 600; line-height: 1;">09/01</span>
-            </div>
+  <!-- ============ latest news ============ -->
+  <section class="home-block">
+    <div class="home-block-head">
+      <h3>
+        <i class="icon fa-solid fa-satellite-dish"></i>
+        研究室ニュース / Lab News
+      </h3>
+    </div>
 
-            <!-- Post Title (Clickable) -->
-            <div style="flex-grow: 1; padding-top: 2px;">
-              <a href="/kidou-lab/2026/09/01/SESJOku.html" style="font-weight: 500; font-size: 1.1em; text-decoration: none; color: inherit;">
+    <div class="home-block-body home-news-scroll">
+      
+      
+        <ul class="home-news">
+          
+            <li class="home-news-item">
+              <span class="home-news-date">
+                <span class="home-news-year">2026年</span>
+                <span class="home-news-day">09/01</span>
+              </span>
+              <a class="home-news-title" href="/kidou-lab/2026/09/01/SESJOku.html">
                 SESJ26　で P23k 研究成果を発表しました
               </a>
-            </div>
-          </li>
-        
-          <li style="
-            border-bottom: 1px solid var(--light-gray);
-            padding: 15px 5px;
-            display: flex;
-            align-items: flex-start;
-          ">
-            <!-- Modern Date Badge (Left Side) -->
-            <div style="
-              text-align: center;
-              margin-right: 20px;
-              flex-shrink: 0;
-              width: 90px;
-              font-family: var(--code);
-            ">
-              <span style="font-size: 0.9em; font-weight: 600;">2026年</span><br>
-              <span style="color: var(--primary); font-size: 1.1em; font-weight: 600; line-height: 1;">09/01</span>
-            </div>
-
-            <!-- Post Title (Clickable) -->
-            <div style="flex-grow: 1; padding-top: 2px;">
-              <a href="/kidou-lab/2026/09/01/SESJ.html" style="font-weight: 500; font-size: 1.1em; text-decoration: none; color: inherit;">
+            </li>
+          
+            <li class="home-news-item">
+              <span class="home-news-date">
+                <span class="home-news-year">2026年</span>
+                <span class="home-news-day">09/01</span>
+              </span>
+              <a class="home-news-title" href="/kidou-lab/2026/09/01/SESJ.html">
                 Presented our evolutionary perspective on CISP at SESJ26
               </a>
-            </div>
-          </li>
-        
-          <li style="
-            border-bottom: 1px solid var(--light-gray);
-            padding: 15px 5px;
-            display: flex;
-            align-items: flex-start;
-          ">
-            <!-- Modern Date Badge (Left Side) -->
-            <div style="
-              text-align: center;
-              margin-right: 20px;
-              flex-shrink: 0;
-              width: 90px;
-              font-family: var(--code);
-            ">
-              <span style="font-size: 0.9em; font-weight: 600;">2025年</span><br>
-              <span style="color: var(--primary); font-size: 1.1em; font-weight: 600; line-height: 1;">09/28</span>
-            </div>
-
-            <!-- Post Title (Clickable) -->
-            <div style="flex-grow: 1; padding-top: 2px;">
-              <a href="/kidou-lab/2025/09/28/%E5%AD%A6%E4%BC%9A%E8%B3%9E-conferences-awards-2.html" style="font-weight: 500; font-size: 1.1em; text-decoration: none; color: inherit;">
+            </li>
+          
+            <li class="home-news-item">
+              <span class="home-news-date">
+                <span class="home-news-year">2025年</span>
+                <span class="home-news-day">09/28</span>
+              </span>
+              <a class="home-news-title" href="/kidou-lab/2025/09/28/%E5%AD%A6%E4%BC%9A%E8%B3%9E-conferences-awards-2.html">
                 学会賞・Conferences Awards
               </a>
-            </div>
-          </li>
-        
-          <li style="
-            border-bottom: 1px solid var(--light-gray);
-            padding: 15px 5px;
-            display: flex;
-            align-items: flex-start;
-          ">
-            <!-- Modern Date Badge (Left Side) -->
-            <div style="
-              text-align: center;
-              margin-right: 20px;
-              flex-shrink: 0;
-              width: 90px;
-              font-family: var(--code);
-            ">
-              <span style="font-size: 0.9em; font-weight: 600;">2025年</span><br>
-              <span style="color: var(--primary); font-size: 1.1em; font-weight: 600; line-height: 1;">09/28</span>
-            </div>
-
-            <!-- Post Title (Clickable) -->
-            <div style="flex-grow: 1; padding-top: 2px;">
-              <a href="/kidou-lab/2025/09/28/%E5%AD%A6%E4%BC%9A%E8%B3%9E-conferences-awards-1.html" style="font-weight: 500; font-size: 1.1em; text-decoration: none; color: inherit;">
+            </li>
+          
+            <li class="home-news-item">
+              <span class="home-news-date">
+                <span class="home-news-year">2025年</span>
+                <span class="home-news-day">09/28</span>
+              </span>
+              <a class="home-news-title" href="/kidou-lab/2025/09/28/%E5%AD%A6%E4%BC%9A%E8%B3%9E-conferences-awards-1.html">
                 学会賞・Conferences Awards
               </a>
-            </div>
-          </li>
-        
-          <li style="
-            border-bottom: 1px solid var(--light-gray);
-            padding: 15px 5px;
-            display: flex;
-            align-items: flex-start;
-          ">
-            <!-- Modern Date Badge (Left Side) -->
-            <div style="
-              text-align: center;
-              margin-right: 20px;
-              flex-shrink: 0;
-              width: 90px;
-              font-family: var(--code);
-            ">
-              <span style="font-size: 0.9em; font-weight: 600;">2025年</span><br>
-              <span style="color: var(--primary); font-size: 1.1em; font-weight: 600; line-height: 1;">07/27</span>
-            </div>
-
-            <!-- Post Title (Clickable) -->
-            <div style="flex-grow: 1; padding-top: 2px;">
-              <a href="/kidou-lab/2025/07/27/%E5%AD%A6%E4%BC%9A%E8%B3%9E-conferences-awards.html" style="font-weight: 500; font-size: 1.1em; text-decoration: none; color: inherit;">
+            </li>
+          
+            <li class="home-news-item">
+              <span class="home-news-date">
+                <span class="home-news-year">2025年</span>
+                <span class="home-news-day">07/27</span>
+              </span>
+              <a class="home-news-title" href="/kidou-lab/2025/07/27/%E5%AD%A6%E4%BC%9A%E8%B3%9E-conferences-awards.html">
                 学会賞・Conferences Awards
               </a>
-            </div>
-          </li>
-        
-      </ul>
-    
-  </div>
+            </li>
+          
+        </ul>
+      
+    </div>
 
-  <!-- Bottom Link to full Blog page -->
-  <div style="
-    padding: 10px;
-    text-align: center;
-    border-top: 1px solid var(--light-gray);
-    background-color: var(--background-alt);
-  ">
-    <a href="/kidou-lab/blog/" style="font-size: 0.9em;">
-      すべての投稿を見る / See all posts <i class="icon fa-solid fa-angles-right"></i>
-    </a>
-  </div>
+    <div class="home-block-foot">
+      <a href="/kidou-lab/blog/">
+        すべての投稿を見る / See all posts
+        <i class="icon fa-solid fa-angles-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ featured publications ============ -->
+  
+  
+    <section class="home-block">
+      <div class="home-block-head">
+        <h3>
+          <i class="icon fa-solid fa-file-signature"></i>
+          最新の論文 / Recent Publications
+        </h3>
+      </div>
+
+      <div class="home-block-body">
+        <ul class="home-pubs">
+          
+            <li class="home-pub-item">
+              <span class="home-pub-date">2026</span>
+              <span class="home-pub-main">
+                <a class="home-pub-title" href="https://doi.org/hchb7n">Functional analysis of cold stress responsive barley CISP genes in transgenic rice</a>
+                <span class="home-pub-meta">
+                  Haque Md Maksudul, Yutaro Okumura, Shin-ichiro Kidou
+                  · <em>Plant Gene</em>
+                </span>
+              </span>
+            </li>
+          
+            <li class="home-pub-item">
+              <span class="home-pub-date">2026</span>
+              <span class="home-pub-main">
+                <a class="home-pub-title" href="https://doi.org/hchb7b">CISP, an Intrinsically Disordered Cold‐Inducible Barley Protein, Functions as a Small RNA Chaperone</a>
+                <span class="home-pub-meta">
+                  Yutaro Okumura, Md. Maksudul Haque, Shin‐ichiro Kidou
+                  · <em>Plant Direct</em>
+                </span>
+              </span>
+            </li>
+          
+            <li class="home-pub-item">
+              <span class="home-pub-date">2026</span>
+              <span class="home-pub-main">
+                <a class="home-pub-title" href="https://doi.org/hchb7d">Deep-MAP: A user-friendly platform for deep learning-based microplastics classification</a>
+                <span class="home-pub-meta">
+                  Y Okumura, A Fadhilah, R Haribowo, S Kidou
+                  · <em>IOP Conference Series: Earth and Environmental Science</em>
+                </span>
+              </span>
+            </li>
+          
+            <li class="home-pub-item">
+              <span class="home-pub-date">2026</span>
+              <span class="home-pub-main">
+                <a class="home-pub-title" href="https://doi.org/hchb7c">Revealing microplastic pollution hotspots in Indonesia freshwaters: A synthesis of methodological biases, anthropogenic drivers, and predictive hotspot mapping</a>
+                <span class="home-pub-meta">
+                  A Fadhilah, R Haribowo, ..., M N I Wahid, S Kidou
+                  · <em>IOP Conference Series: Earth and Environmental Science</em>
+                </span>
+              </span>
+            </li>
+          
+        </ul>
+      </div>
+
+      <div class="home-block-foot">
+        <a href="/kidou-lab/projects/">
+          業績一覧を見る / See all publications
+          <i class="icon fa-solid fa-angles-right"></i>
+        </a>
+      </div>
+    </section>
+  
+
 </div>
-<!-- MODERN, SCROLLABLE NEWS SECTION END -->
   </section>
 
 

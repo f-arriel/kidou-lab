@@ -213,6 +213,10 @@
   
 
   
+    <link href="/kidou-lab/_styles/home.css" rel="stylesheet">
+  
+
+  
     <link href="/kidou-lab/_styles/icon.css" rel="stylesheet">
   
 
@@ -360,6 +364,8 @@
 
   
 
+  
+
 
 <!-- include all css in styles folder -->
 
@@ -401,6 +407,9 @@
 
 
 
+
+
+
 <header class="background" style="--image: url('/kidou-lab/images/background.jpg')" data-dark="true">
   <a href="/kidou-lab/" class="home">
     
@@ -418,58 +427,70 @@
     
   </a>
 
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
+  <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
   <nav>
     
     
       
-        
-        <a href="/kidou-lab/research/" data-tooltip="">
-          <span class="nav-ja">研究内容</span>
-          <span class="nav-en">Research</span>
-        </a>
+
       
+      
+
+      <a href="/kidou-lab/research/" data-tooltip="">
+        <span class="nav-ja">研究内容</span>
+        <span class="nav-en">Research</span>
+      </a>
     
       
-        
-        <a href="/kidou-lab/team/" data-tooltip="">
-          <span class="nav-ja">メンバー</span>
-          <span class="nav-en">People</span>
-        </a>
+
       
+      
+
+      <a href="/kidou-lab/team/" data-tooltip="">
+        <span class="nav-ja">メンバー</span>
+        <span class="nav-en">People</span>
+      </a>
     
       
-        
-        <a href="/kidou-lab/projects/" data-tooltip="">
-          <span class="nav-ja">業績</span>
-          <span class="nav-en">Publications</span>
-        </a>
+
       
+      
+
+      <a href="/kidou-lab/projects/" data-tooltip="">
+        <span class="nav-ja">業績</span>
+        <span class="nav-en">Publications</span>
+      </a>
     
       
-        
-        <a href="/kidou-lab/outreach/" data-tooltip="">
-          <span class="nav-ja">社会貢献</span>
-          <span class="nav-en">Outreach</span>
-        </a>
+
       
+      
+
+      <a href="/kidou-lab/outreach/" data-tooltip="" data-active aria-current="page">
+        <span class="nav-ja">社会貢献</span>
+        <span class="nav-en">Outreach</span>
+      </a>
     
       
-        
-        <a href="/kidou-lab/blog/" data-tooltip="">
-          <span class="nav-ja">お知らせ</span>
-          <span class="nav-en">News</span>
-        </a>
+
       
+      
+
+      <a href="/kidou-lab/blog/" data-tooltip="">
+        <span class="nav-ja">お知らせ</span>
+        <span class="nav-en">News</span>
+      </a>
     
       
-        
-        <a href="/kidou-lab/contact/" data-tooltip="">
-          <span class="nav-ja">アクセス</span>
-          <span class="nav-en">Contact</span>
-        </a>
+
       
+      
+
+      <a href="/kidou-lab/contact/" data-tooltip="">
+        <span class="nav-ja">アクセス</span>
+        <span class="nav-en">Contact</span>
+      </a>
     
   </nav>
 </header>
@@ -514,7 +535,9 @@
 
 <div class="outreach">
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2026">
       <div class="outreach-date">
         <span class="outreach-year">2026</span>
         <span class="outreach-day">7.9</span>
@@ -525,7 +548,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">進路指導講演会・名古屋市立名東高等学校</span>
@@ -539,18 +562,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="文系の魅力・理系の魅力（出前講義2026）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2026">
       <div class="outreach-date">
         <span class="outreach-year">2026</span>
         <span class="outreach-day">6.26</span>
@@ -561,7 +580,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">1年普通科進路指導講演会・名古屋市立桜台高等学校</span>
@@ -575,18 +594,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="理系学問の魅力とその可能性（出前講義2026）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2026">
       <div class="outreach-date">
         <span class="outreach-year">2026</span>
         <span class="outreach-day">6.13</span>
@@ -597,7 +612,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第29回グリーンカレッジ・名古屋市緑化センター</span>
@@ -611,18 +626,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="イネの構造と特徴（市民公開講座2026）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2026">
       <div class="outreach-date">
         <span class="outreach-year">2026</span>
         <span class="outreach-day">6.6</span>
@@ -633,7 +644,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第29回グリーンカレッジ・名古屋市緑化センター</span>
@@ -647,18 +658,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="イネの品種改良と分子育種（市民公開講座2026）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2025">
       <div class="outreach-date">
         <span class="outreach-year">2025</span>
         <span class="outreach-day">10.22</span>
@@ -669,7 +676,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">出前講義・名城大学附属高等学校</span>
@@ -683,18 +690,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="バイオマス資源と植物の利用（出前講義2025）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2025">
       <div class="outreach-date">
         <span class="outreach-year">2025</span>
         <span class="outreach-day">9.13</span>
@@ -705,7 +708,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">環境デーなごや2025・エンゼル広場（名古屋市中区）</span>
@@ -736,7 +739,9 @@
       
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2025">
       <div class="outreach-date">
         <span class="outreach-year">2025</span>
         <span class="outreach-day">7.19</span>
@@ -747,7 +752,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">オープンキャンパス</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9"' data-tooltip='Show items with the tag "オープンキャンパス"'>オープンキャンパス</a>
           
           
             <span class="outreach-venue">総合生命理学部オープンキャンパス・名古屋市立大学</span>
@@ -761,18 +766,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="遺伝子組換え植物の現状と未来（オープンキャンパス2025）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2025">
       <div class="outreach-date">
         <span class="outreach-year">2025</span>
         <span class="outreach-day">7.18</span>
@@ -783,7 +784,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第158回サイエンスカフェ・名古屋市立大学タキテリア</span>
@@ -797,18 +798,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="植物の品種改良は我々に何をもたらしたか〜遺伝子を操作することの功罪〜（サイエンスカフェ2025）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2025">
       <div class="outreach-date">
         <span class="outreach-year">2025</span>
         <span class="outreach-day">7.10</span>
@@ -819,7 +816,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">進路指導講演会・名古屋市立名東高等学校</span>
@@ -833,18 +830,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="理系の魅力について（出前講義2025）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2025">
       <div class="outreach-date">
         <span class="outreach-year">2025</span>
         <span class="outreach-day">7.10</span>
@@ -855,7 +848,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">その他</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E3%81%9D%E3%81%AE%E4%BB%96"' data-tooltip='Show items with the tag "その他"'>その他</a>
           
           
             <span class="outreach-venue">まるごと研究室体験・名古屋市立大学</span>
@@ -869,18 +862,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="PCRを利用した植物の多型解析（高大連携授業2025）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2025">
       <div class="outreach-date">
         <span class="outreach-year">2025</span>
         <span class="outreach-day">6.27</span>
@@ -891,7 +880,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">1年普通科進路指導講演会・名古屋市立桜台高等学校</span>
@@ -905,18 +894,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="理系学問の魅力とその可能性（出前講義2025）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2025">
       <div class="outreach-date">
         <span class="outreach-year">2025</span>
         <span class="outreach-day">6.14</span>
@@ -927,7 +912,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第28回グリーンカレッジ・名古屋市緑化センター</span>
@@ -941,18 +926,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="植物と日本の食文化「調味料の文化と科学」(市民公開講座2025）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2025">
       <div class="outreach-date">
         <span class="outreach-year">2025</span>
         <span class="outreach-day">6.7</span>
@@ -963,7 +944,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第28回グリーンカレッジ・名古屋市緑化センター</span>
@@ -977,18 +958,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="植物と日本の食文化「発酵食品の文化と科学」（市民公開講座2025）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2024">
       <div class="outreach-date">
         <span class="outreach-year">2024</span>
         <span class="outreach-day">10.28</span>
@@ -999,7 +976,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">模擬講義・愛知県立岡崎北高等学校</span>
@@ -1013,18 +990,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="バイオマス資源と植物の利用（出前講義2024）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2024">
       <div class="outreach-date">
         <span class="outreach-year">2024</span>
         <span class="outreach-day">10.23</span>
@@ -1035,7 +1008,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">模擬講義・名城大学附属高等学校</span>
@@ -1049,18 +1022,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="低温が植物に及ぼす影響とそれに対する耐性機構（出前講義2024）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2024">
       <div class="outreach-date">
         <span class="outreach-year">2024</span>
         <span class="outreach-day">8.9</span>
@@ -1071,7 +1040,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">その他</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E3%81%9D%E3%81%AE%E4%BB%96"' data-tooltip='Show items with the tag "その他"'>その他</a>
           
           
             <span class="outreach-venue">愛知県立佐屋高等学校・名古屋市立大学</span>
@@ -1085,18 +1054,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="植物の多様性と環境応答（高大連携授業2024）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2024">
       <div class="outreach-date">
         <span class="outreach-year">2024</span>
         <span class="outreach-day">6.22</span>
@@ -1107,7 +1072,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第27回グリーンカレッジ・名古屋市緑化センター</span>
@@ -1121,18 +1086,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="気候変動と植物「気候変動と農作物（イモ類）（市民公開講座2024）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2024">
       <div class="outreach-date">
         <span class="outreach-year">2024</span>
         <span class="outreach-day">6.15</span>
@@ -1143,7 +1104,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第27回グリーンカレッジ・名古屋市緑化センター</span>
@@ -1157,18 +1118,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="気候変動と植物「気候変動と農作物（穀類）」（市民公開講座2024）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2023">
       <div class="outreach-date">
         <span class="outreach-year">2023</span>
         <span class="outreach-day">6.3</span>
@@ -1179,7 +1136,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第26回グリーンカレッジ・名古屋市緑化センター</span>
@@ -1193,18 +1150,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="人の暮らしを支える植物たち「薬になる植物」（市民公開講座2023）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2023">
       <div class="outreach-date">
         <span class="outreach-year">2023</span>
         <span class="outreach-day">5.27</span>
@@ -1215,7 +1168,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第26回グリーンカレッジ・名古屋市緑化センター</span>
@@ -1229,18 +1182,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="人の暮らしを支える植物たち「生活素材や嗜好品になる植物」（市民公開講座2023）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2022">
       <div class="outreach-date">
         <span class="outreach-year">2022</span>
         <span class="outreach-day">11.11</span>
@@ -1251,7 +1200,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">模擬講義・愛知県立半田高等学校</span>
@@ -1265,18 +1214,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="オオムギの低温耐性機構が知りたくて（出前講義2022）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2022">
       <div class="outreach-date">
         <span class="outreach-year">2022</span>
         <span class="outreach-day">11.5</span>
@@ -1287,7 +1232,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">名古屋市立大学x名古屋市科学館サイエンスパートナーシップイベント・名古屋市科学館</span>
@@ -1301,18 +1246,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="β-グルカンを知っていますか？（市民公開講座2022）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2022">
       <div class="outreach-date">
         <span class="outreach-year">2022</span>
         <span class="outreach-day">10.21</span>
@@ -1323,7 +1264,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">学び博in名古屋・名古屋市中小企業振興会館</span>
@@ -1337,18 +1278,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="疑似研究室体験_天白高校（出前講義2022）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2022">
       <div class="outreach-date">
         <span class="outreach-year">2022</span>
         <span class="outreach-day">8.23</span>
@@ -1359,7 +1296,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">その他</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E3%81%9D%E3%81%AE%E4%BB%96"' data-tooltip='Show items with the tag "その他"'>その他</a>
           
           
             <span class="outreach-venue">まるごと研究室体験・名古屋市立大学</span>
@@ -1373,18 +1310,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="PCRを利用した植物の多型解析（高大連携授業2022）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2022">
       <div class="outreach-date">
         <span class="outreach-year">2022</span>
         <span class="outreach-day">8.9</span>
@@ -1395,7 +1328,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">シニアスクール・成城ホール（東京）</span>
@@ -1409,18 +1342,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="ゲノム編集・遺伝子組み換え作物の功罪（市民公開講座2022）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2022">
       <div class="outreach-date">
         <span class="outreach-year">2022</span>
         <span class="outreach-day">6.11</span>
@@ -1431,7 +1360,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第25回グリーンカレッジ・名古屋市緑化センター</span>
@@ -1445,18 +1374,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="二酸化炭素問題と植物「気候変動と植物」（市民公開講座2022）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2022">
       <div class="outreach-date">
         <span class="outreach-year">2022</span>
         <span class="outreach-day">6.4</span>
@@ -1467,7 +1392,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第25回グリーンカレッジ・名古屋市緑化センター</span>
@@ -1481,18 +1406,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="二酸化炭素問題と植物「生命活動と二酸化炭素」（市民公開講座2022）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2021">
       <div class="outreach-date">
         <span class="outreach-year">2021</span>
         <span class="outreach-day">10.13</span>
@@ -1503,7 +1424,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">模擬講義・愛知県立半田高等学校</span>
@@ -1517,18 +1438,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="発熱できない植物が、なぜ低温環境に適応して生育できるのか？（出前講義2021）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2021">
       <div class="outreach-date">
         <span class="outreach-year">2021</span>
         <span class="outreach-day">7.26</span>
@@ -1539,7 +1456,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">その他</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E3%81%9D%E3%81%AE%E4%BB%96"' data-tooltip='Show items with the tag "その他"'>その他</a>
           
           
             <span class="outreach-venue">まるごと研究室体験・名古屋市立大学</span>
@@ -1553,18 +1470,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="PCRを利用した植物の多型解析（高大連携授業2021）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2021">
       <div class="outreach-date">
         <span class="outreach-year">2021</span>
         <span class="outreach-day">6.5</span>
@@ -1575,7 +1488,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第24回グリーンカレッジ・名古屋市緑化センター</span>
@@ -1589,18 +1502,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="植物たちの5種競技「花比べ」（市民公開講座2021）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2021">
       <div class="outreach-date">
         <span class="outreach-year">2021</span>
         <span class="outreach-day">5.29</span>
@@ -1611,7 +1520,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第24回グリーンカレッジ・名古屋市緑化センター</span>
@@ -1625,18 +1534,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="植物たちの5種競技「薬効比べ」（市民公開講座2021）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2020">
       <div class="outreach-date">
         <span class="outreach-year">2020</span>
         <span class="outreach-day">10.10</span>
@@ -1647,7 +1552,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">その他</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E3%81%9D%E3%81%AE%E4%BB%96"' data-tooltip='Show items with the tag "その他"'>その他</a>
           
           
             <span class="outreach-venue">まるごと研究室体験・名古屋市立大学</span>
@@ -1661,18 +1566,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="PCRを利用した植物の多型解析（高大連携授業2020）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2019">
       <div class="outreach-date">
         <span class="outreach-year">2019</span>
         <span class="outreach-day">11.14</span>
@@ -1683,7 +1584,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">模擬講義･岐阜県立多治見高等学校</span>
@@ -1697,18 +1598,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="植物の低温耐性に関わる遺伝子の単離と機能解析（出前講義2019）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2019">
       <div class="outreach-date">
         <span class="outreach-year">2019</span>
         <span class="outreach-day">10.30</span>
@@ -1719,7 +1616,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">模擬講義･愛知県立豊橋東高等学校</span>
@@ -1733,18 +1630,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="オオムギが冬を乗り切るしくみが知りたくて（出前講義2019）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2019">
       <div class="outreach-date">
         <span class="outreach-year">2019</span>
         <span class="outreach-day">10.19</span>
@@ -1755,7 +1648,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">平成31年度市民公開講座・名古屋市立大学</span>
@@ -1769,18 +1662,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="植物の進化と多様性（市民公開講座2019）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2019">
       <div class="outreach-date">
         <span class="outreach-year">2019</span>
         <span class="outreach-day">8.30</span>
@@ -1791,7 +1680,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">その他</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E3%81%9D%E3%81%AE%E4%BB%96"' data-tooltip='Show items with the tag "その他"'>その他</a>
           
           
             <span class="outreach-venue">まるごと研究室体験・名古屋市立大学</span>
@@ -1805,18 +1694,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="PCRを利用した植物の多型解析（高大連携授業2019）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2019">
       <div class="outreach-date">
         <span class="outreach-year">2019</span>
         <span class="outreach-day">6.8</span>
@@ -1827,7 +1712,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第22回グリーンカレッジ・名古屋市緑化センター</span>
@@ -1841,18 +1726,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="理学で説く、植物と人間の暮らし･健康「遺伝子組換え作物とは何か」（市民公開講座2019）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2019">
       <div class="outreach-date">
         <span class="outreach-year">2019</span>
         <span class="outreach-day">6.1</span>
@@ -1863,7 +1744,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第22回グリーンカレッジ・名古屋市緑化センター</span>
@@ -1877,18 +1758,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="理学で説く、植物と人間の暮らし･健康「植物の栽培化と品種改良の歴史」（市民公開講座2019）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2018">
       <div class="outreach-date">
         <span class="outreach-year">2018</span>
         <span class="outreach-day">11.15</span>
@@ -1899,7 +1776,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">模擬講義・岐阜県立多治見高等学校</span>
@@ -1913,18 +1790,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="暮らしに役立つ植物の二次代謝産物（出前講義2018）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2018">
       <div class="outreach-date">
         <span class="outreach-year">2018</span>
         <span class="outreach-day">11.15</span>
@@ -1935,7 +1808,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">模擬講義・岐阜県立多治見高等学校</span>
@@ -1949,18 +1822,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="あるタンパク質の機能が知りたくて（出前講義2018）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2018">
       <div class="outreach-date">
         <span class="outreach-year">2018</span>
         <span class="outreach-day">10.18</span>
@@ -1971,7 +1840,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">模擬講義・名古屋市立菊里高等学校</span>
@@ -1985,18 +1854,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="P23kと名付けたタンパク質の機能が知りたくて（出前講義2018）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2018">
       <div class="outreach-date">
         <span class="outreach-year">2018</span>
         <span class="outreach-day">9.25</span>
@@ -2007,7 +1872,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">サイエンス特別講義・愛知県立瑞陵高等学校</span>
@@ -2021,18 +1886,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="イネ科植物特異的遺伝子の機能が知りたくて（出前講義2018）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2018">
       <div class="outreach-date">
         <span class="outreach-year">2018</span>
         <span class="outreach-day">7.27</span>
@@ -2043,7 +1904,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">まるごと研究室体験・名古屋市立大学</span>
@@ -2057,18 +1918,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="PCRを利用した植物の多型解析（高大連携授業2018）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2018">
       <div class="outreach-date">
         <span class="outreach-year">2018</span>
         <span class="outreach-day">7.3</span>
@@ -2079,7 +1936,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">岐阜県立長良高等学校模擬講義・名古屋市立大学</span>
@@ -2093,18 +1950,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="植物の二次代謝産物（出前講義2018）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2018">
       <div class="outreach-date">
         <span class="outreach-year">2018</span>
         <span class="outreach-day">6.2</span>
@@ -2115,7 +1968,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第21回グリーンカレッジ・緑化センター</span>
@@ -2129,18 +1982,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="健康と植物性食品「豊かな暮らしを支える香気成分」（市民公開講座2018）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2018">
       <div class="outreach-date">
         <span class="outreach-year">2018</span>
         <span class="outreach-day">5.26</span>
@@ -2151,7 +2000,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第21回グリーンカレッジ・緑化センター</span>
@@ -2165,18 +2014,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="健康と植物性食品「医薬品になった低分子化合物」（市民公開講座2018）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2017">
       <div class="outreach-date">
         <span class="outreach-year">2017</span>
         <span class="outreach-day">7.29</span>
@@ -2187,7 +2032,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">スーパーサイエンス講義：SSH生物部・愛知県立時習館高等学校</span>
@@ -2201,18 +2046,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="樹木DNAの解析（出前授業2017）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2017">
       <div class="outreach-date">
         <span class="outreach-year">2017</span>
         <span class="outreach-day">7.26</span>
@@ -2223,7 +2064,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">その他</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E3%81%9D%E3%81%AE%E4%BB%96"' data-tooltip='Show items with the tag "その他"'>その他</a>
           
           
             <span class="outreach-venue">まるごと研究室体験・名古屋市立大学</span>
@@ -2237,18 +2078,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="PCRを利用した植物の同定（高大連携授業2017）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2017">
       <div class="outreach-date">
         <span class="outreach-year">2017</span>
         <span class="outreach-day">6.3</span>
@@ -2259,7 +2096,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第20回グリーンカレッジ・名古屋市緑化センター</span>
@@ -2273,18 +2110,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="植物のすがた・形と働き：葉と花(2)（市民公開講座2017）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2017">
       <div class="outreach-date">
         <span class="outreach-year">2017</span>
         <span class="outreach-day">5.31</span>
@@ -2295,7 +2128,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">サイエンス特別講義・愛知県立瑞陵高等学校</span>
@@ -2309,18 +2142,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="顕微鏡〜生命科学分野における利用-3〜(出前講義2017）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2017">
       <div class="outreach-date">
         <span class="outreach-year">2017</span>
         <span class="outreach-day">5.27</span>
@@ -2331,7 +2160,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第20回グリーンカレッジ・名古屋市緑化センター</span>
@@ -2345,18 +2174,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="植物のすがた・形と働き：葉と花(１)（市民公開講座2017）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2017">
       <div class="outreach-date">
         <span class="outreach-year">2017</span>
         <span class="outreach-day">5.21</span>
@@ -2367,7 +2192,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">生命総合理学部開設記念特別企画・中日文化センター</span>
@@ -2381,18 +2206,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="優れた生物の能力「植物の環境適応能力」（市民公開講座2017）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2017">
       <div class="outreach-date">
         <span class="outreach-year">2017</span>
         <span class="outreach-day">5.10</span>
@@ -2403,7 +2224,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">サイエンス特別講義・愛知県立瑞陵高等学校</span>
@@ -2417,18 +2238,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="顕微鏡〜生命科学分野における利用−2〜（出前講義2017）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2017">
       <div class="outreach-date">
         <span class="outreach-year">2017</span>
         <span class="outreach-day">4.19</span>
@@ -2439,7 +2256,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">出前授業</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%87%BA%E5%89%8D%E6%8E%88%E6%A5%AD"' data-tooltip='Show items with the tag "出前授業"'>出前授業</a>
           
           
             <span class="outreach-venue">サイエンス特別講義・愛知県立瑞陵高等学校</span>
@@ -2453,18 +2270,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="顕微鏡〜生命科学分野における利用−1〜（出前講義2017）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2017">
       <div class="outreach-date">
         <span class="outreach-year">2017</span>
         <span class="outreach-day">1.20</span>
@@ -2475,7 +2288,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">第117回サイエンスカフェ・栄ナディアパーク</span>
@@ -2489,18 +2302,14 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
       
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="花を取り巻く植物の話（市民公開講座2017）" loading="lazy">
-        </a>
-      
     </article>
   
-    <article class="outreach-item">
+    
+
+    <article class="outreach-item" data-search="year-2017">
       <div class="outreach-date">
         <span class="outreach-year">2017</span>
         <span class="outreach-day">1.5</span>
@@ -2511,7 +2320,7 @@
 
         <div class="outreach-meta">
           
-            <span class="outreach-tag">公開講座</span>
+            <a class="tag outreach-tag" href='/kidou-lab/outreach/?search="tag:%20%E5%85%AC%E9%96%8B%E8%AC%9B%E5%BA%A7"' data-tooltip='Show items with the tag "公開講座"'>公開講座</a>
           
           
             <span class="outreach-venue">生命総合理学部開設記念特別企画・中日文化センター</span>
@@ -2525,14 +2334,8 @@
         
 
         
-          <a class="outreach-link" href="">詳細 / More information</a>
-        
       </div>
 
-      
-        <a class="outreach-thumb" href="/kidou-lab">
-          <img src="/kidou-lab" alt="光の科学「植物と光」（市民公開講座2017）" loading="lazy">
-        </a>
       
     </article>
   

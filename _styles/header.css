@@ -58,12 +58,18 @@ header a {
 .nav-toggle {
   display: none;
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin: 0;
+  border-radius: var(--rounded);
   color: var(--text);
   appearance: none;
+  cursor: pointer;
   transition: background var(--transition);
+}
+
+.nav-toggle:hover {
+  background: var(--overlay);
 }
 
 .nav-toggle:after {
@@ -72,7 +78,7 @@ header a {
   left: 50%;
   top: 50%;
   color: var(--text);
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   transform: translate(-50%, -50%);
@@ -87,7 +93,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 4px 16px;
+  gap: 4px 14px;
   font-family: var(--heading);
   text-transform: uppercase;
 }
@@ -97,12 +103,23 @@ nav > a {
   flex-direction: column;
   align-items: center;
   gap: 1px;
-  padding: 6px 4px;
+  padding: 6px 8px;
+  border-radius: var(--rounded);
   line-height: 1.2;
+  transition: color var(--transition), background var(--transition);
 }
 
 nav > a:hover {
   color: var(--primary);
+}
+
+nav > a[data-active] {
+  color: var(--primary);
+  font-weight: var(--bold);
+}
+
+nav > a[data-active] .nav-en {
+  opacity: 1;
 }
 
 .nav-ja {
@@ -117,29 +134,47 @@ nav > a:hover {
   white-space: nowrap;
 }
 
-@media (max-width: 700px) {
-  header:not([data-big]) {
-    justify-content: flex-end;
+@media (max-width: 900px) {
+  header {
+    gap: 12px;
+    padding: 14px 16px;
   }
-  header:not([data-big]) .nav-toggle {
+  .nav-toggle {
     display: flex;
+    order: 2;
   }
-  header:not([data-big]) .nav-toggle:not(:checked) + nav {
+  .nav-toggle:not(:checked) + nav {
     display: none;
   }
-  header:not([data-big]) nav {
-    align-items: flex-end;
+  nav {
+    order: 3;
+    align-items: stretch;
     flex-direction: column;
     width: 100%;
-    gap: 2px;
+    gap: 0;
+    padding-top: 8px;
+    border-top: 1px solid var(--overlay);
+    text-align: left;
   }
-  header:not([data-big]) nav > a {
+  nav > a {
     flex-direction: row;
     align-items: baseline;
-    gap: 6px;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 12px 8px;
+    border-radius: 0;
+  }
+  nav > a + a {
+    border-top: 1px solid var(--overlay);
+  }
+  nav > a[data-active] {
+    background: var(--overlay);
+  }
+  .home {
+    order: 1;
+    flex-basis: auto;
   }
 }
-
 header[data-big] {
   justify-content: center;
   align-items: center;
@@ -165,6 +200,15 @@ header[data-big] .title {
 }
 header[data-big] .subtitle {
   font-size: var(--large);
+}
+@media (max-width: 900px) {
+  header[data-big] {
+    flex-direction: column;
+    padding: 40px 16px 20px 16px;
+  }
+  header[data-big] .nav-toggle {
+    align-self: flex-end;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

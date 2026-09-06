@@ -151,5 +151,47 @@
     display: none;
   }
 }
+.tag.outreach-tag {
+  margin: 0;
+  padding: 2px 8px;
+  border: 1px solid var(--light-gray);
+  border-radius: 999px;
+  background: none;
+  color: var(--primary);
+  font-family: var(--heading);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.tag.outreach-tag:hover,
+.tag.outreach-tag[data-active] {
+  border-color: var(--primary);
+  background: var(--secondary);
+}
+
+.outreach-filter {
+  gap: 8px;
+  margin: 14px 0 0 0;
+}
+
+.outreach-filter .tag {
+  font-size: 0.85rem;
+}
+
+.outreach-filter-years {
+  margin-bottom: 24px;
+}
+
+.outreach-filter-years .tag {
+  font-family: var(--code);
+}
+
+.tag-count {
+  margin-left: 5px;
+  opacity: 0.6;
+  font-size: 0.75em;
+}
 
 /*# sourceMappingURL=outreach.css.map */

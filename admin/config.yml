@@ -396,9 +396,22 @@ collections:
               - { label: "説明 / Tooltip", name: "tooltip", widget: "string", required: false }
           - { label: "本文 / Body (HTML + Markdown)", name: "body", widget: "text" }
 
-      - label: "業績・社会貢献ページ / Publications page"
+      - label: "業績ページ / Publications page"
         name: "projects"
         file: "projects/index.md"
+        fields:
+          - { label: "ページ名 / Page title", name: "title", widget: "string" }
+          - label: "ナビ設定 / Navigation"
+            name: "nav"
+            widget: "object"
+            fields:
+              - { label: "並び順 / Order", name: "order", widget: "number", value_type: "int" }
+              - { label: "説明 / Tooltip", name: "tooltip", widget: "string", required: false }
+          - { label: "本文 / Body (HTML + Markdown)", name: "body", widget: "text" }
+
+      - label: "社会貢献ページ / Outreach page"
+        name: "outreach_page"
+        file: "outreach/index.md"
         fields:
           - { label: "ページ名 / Page title", name: "title", widget: "string" }
           - label: "ナビ設定 / Navigation"

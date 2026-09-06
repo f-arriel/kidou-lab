@@ -35,10 +35,12 @@ nav:
 
 ## 卒業生 / Alumni
 
-{% assign alumni = site.members | where_exp: "m", "m.role == 'alumni'" | sort: "graduation_year" | reverse %}
-{% for person in alumni %}{{ person.name }}{% if person.affiliation %} — {{ person.affiliation }}{% endif %}{% if person.graduation_year %} ({{ person.graduation_year }}){% endif %}
+お名前をクリックすると、研究テーマや学位論文のタイトルをご覧いただけます。
 <br>
-{% endfor %}
+*Click a name to see the research theme and thesis title.*
+<br><br>
+
+{% include alumni-list.html %}
 
 
 {% include section.html %}
@@ -47,7 +49,7 @@ nav:
 
 {% assign jobs = site.employment | sort: "year" | reverse %}
 {% for job in jobs %}
-{{ job.year }}年　{{ job.degree }}　{{ job.organization }}{% if job.sector %}（{{ job.sector }}）{% endif %}
+{{ job.degree }}　{{ job.organization }}{% if job.sector %}（{{ job.sector }}）{% endif %}
 <br>
 {% endfor %}
 

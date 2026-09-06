@@ -1,7 +1,7 @@
 ---
 title: お知らせ / News
 nav:
-  order: 4
+  order: 5
   tooltip: 
 ---
 

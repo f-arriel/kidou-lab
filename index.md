@@ -67,11 +67,7 @@ Barley is not only used as a main ingredient in beer and whiskey, but is also en
   </section>
 
   <!-- ============ featured publications ============ -->
-  {% assign dated_pubs = site.data.citations
-    | where_exp: "c", "c.date"
-    | sort: "date"
-    | reverse
-  %}
+  {% assign dated_pubs = site.data.citations | where_exp: "c", "c.date" | sort: "date" | reverse %}
   {% if dated_pubs.size > 0 %}
     <section class="home-block">
       <div class="home-block-head">
@@ -87,10 +83,7 @@ Barley is not only used as a main ingredient in beer and whiskey, but is also en
             <li class="home-pub-item">
               <span class="home-pub-date">{{ pub.date | date: "%Y" }}</span>
               <span class="home-pub-main">
-                <a
-                  class="home-pub-title"
-                  {% if pub.link %}href="{{ pub.link }}"{% endif %}
-                >{{ pub.title }}</a>
+                <a class="home-pub-title" href="{{ pub.link }}">{{ pub.title }}</a>
                 <span class="home-pub-meta">
                   {{ pub.authors | array_carve: 2 | join: ", " }}
                   {% if pub.publisher %}·&nbsp;<em>{{ pub.publisher }}</em>{% endif %}

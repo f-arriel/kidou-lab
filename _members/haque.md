@@ -1,10 +1,11 @@
 ---
 name: Haque Md. Maksudul
 username: haque
-role: phd
+role: alumni
+graduation_year: null
 image: images/Haque.jpg
-description: 博士3年
-affiliation: 理学研究科
+description: ''
+affiliation: Bangladesh Institute of Research and Training on Applied Nutrition (BIRTAN)
 links:
   email: ''
   orcid: ''

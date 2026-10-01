@@ -2,7 +2,7 @@
 name: Haque Md. Maksudul
 username: haque
 role: alumni
-graduation_year: null
+graduation_year: 2026
 image: images/Haque.jpg
 description: ''
 affiliation: Bangladesh Institute of Research and Training on Applied Nutrition (BIRTAN)

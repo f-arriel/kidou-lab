@@ -4,7 +4,7 @@ username: arriel
 role: phd
 graduation_year: null
 image: images/Arriel.jpg
-description: 博士後期課程1年
+description: 博士後期課程2年
 affiliation: 理学研究科
 links:
   email: fadhilah.arriel@gmail.com

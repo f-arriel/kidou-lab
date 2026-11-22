@@ -506,3 +506,18 @@
   image: ''
   plugin: sources.py
   file: sources-cms.yaml
+- id: 'DOI: 10.1271/kagakutoseibutsu.62.365'
+  title: "\u4F4E\u6E29\u306B\u66DD\u3055\u308C\u305F\u30AA\u30AA\u30E0\u30AE\u306E\
+    \u6839\u3067\u767A\u73FE\u3059\u308B\u8B0E\u591A\u304D\u907A\u4F1D\u5B50<i>CISP</i>:\
+    \ <i>CISP</i>\u907A\u4F1D\u5B50\u304C\u30B3\u30FC\u30C9\u3059\u308B\u4F4E\u5206\
+    \u5B50\u5869\u57FA\u6027\u30BF\u30F3\u30D1\u30AF\u8CEA\u306E\u7279\u5FB4\u3068\
+    \u63A8\u5B9A\u6A5F\u80FD"
+  authors:
+  - Shin-ichiro Kidou
+  publisher: KAGAKU TO SEIBUTSU
+  date: '2024-08-01'
+  link: https://doi.org/ 10.1271/kagakutoseibutsu.62.365
+  type: ''
+  image: ''
+  plugin: sources.py
+  file: sources-cms.yaml

@@ -2,9 +2,10 @@
 name: 木藤 新一郎 / Shin-ichiro Kidou
 username: kidou
 role: principal-investigator
+graduation_year: null
 image: images/SKidou.jpg
 description: ''
-affiliation: ''
+affiliation: 総合生命理学部・大学院理学研究科
 links:
   email: kidou@nsc.nagoya-cu.ac.jp
   orcid: 0000-0001-8829-7950
